@@ -11,7 +11,7 @@
 
   **Introduction:**
 
-    This is a website for the Computational Sensory-Motor Systems Laboratory based in the Whiting School of Engineering at Johns Hopkins.
+  This is a website for the Computational Sensory-Motor Systems Laboratory based in the Whiting School of Engineering at Johns Hopkins.
 
 ---
 
