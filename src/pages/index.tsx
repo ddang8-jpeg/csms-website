@@ -1,5 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import { Button } from "@/components/ui/button"
 
 const pageStyles = {
   color: "#232129",
@@ -160,6 +161,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </li>
         ))}
       </ul>
+      <Button className="bg-harborBlue text-white">Shadcn Button!</Button>
       <ul style={listStyles}>
         {links.map(link => (
           <li key={link.url} style={{ ...listItemStyles, color: link.color }}>

@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
+import twConfig from "tailwind.config.js"; // Import Tailwind config
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -12,7 +13,12 @@ const config: GatsbyConfig = {
   plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/content/images/icon.png"
+      name: "CSMS Website",
+      short: "CSMS-Site",
+      start_url: "/",
+      background_color: twConfig.theme.extend.colors.white,
+      theme_color: twConfig.theme.extend.colors.darkBlue,
+      icon: "src/content/images/icon.png"
     }
   }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", `gatsby-transformer-remark`, {
     resolve: 'gatsby-source-filesystem',

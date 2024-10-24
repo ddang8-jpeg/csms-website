@@ -1,5 +1,5 @@
 import { GatsbyNode } from 'gatsby';
-import path from 'path';
+import * as path from 'path';
 
 // Define GraphQL query result types
 interface MarkdownNode {
@@ -20,6 +20,17 @@ interface QueryResult {
       node: MarkdownNode;
     }[];
   };
+}
+
+export const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        "@/components": path.resolve(__dirname, "src/components"),
+        "@/lib/utils": path.resolve(__dirname, "src/lib/utils"),
+      },
+    },
+  })
 }
 
 export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions, reporter }) => {
