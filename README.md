@@ -4,46 +4,53 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal TypeScript Starter
+  CSMS Website
 </h1>
 
-## 🚀 Quick start
+## About this repository
 
-1.  **Create a Gatsby site.**
+  **Introduction:**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+    This is a website for the Computational Sensory-Motor Systems Laboratory based in the Whiting School of Engineering at Johns Hopkins.
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+---
 
-2.  **Start developing.**
+**Tech Stack:**
 
-    Navigate into your new site’s directory and start it up.
+- **Frontend:**
+  - **Gatsby**: React-based static site generator for building fast, optimized websites
+  - **React**: JavaScript library for building user interfaces
+  - **GraphQL**: API query language used by Gatsby to fetch data at build time
+  - **TypeScript**: Superset of JavaScript that adds static typing for improved code quality and developer experience
+  - **Tailwind**: Utility-first CSS framework for styling components efficiently
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- **Backend / CMS:**
+  - **GraphQL API**: Used for fetching data from the CMS into Gatsby
 
-3.  **Open the code and start customizing!**
+- **Hosting / Deployment:**
+  - **GitHub**: Version control and repository hosting
 
-    Your site is now running at http://localhost:8000!
+- **Utilities:**
+  - **ESLint**: Linting JavaScript code for consistent styling
+  - **Prettier**: Code formatter for ensuring a clean codebase
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+- **Other Libraries/Tools:**
+  - **Shadcn/UI**: Component library for building responsive and accessible user interfaces in React
+  - **React Helmet**: Managing changes to the document head (meta tags, titles, etc.)
+  - **Gatsby Image**: Optimized image loading
+  - **Gatsby Plugin Manifest**: PWA capabilities for adding the website to home screens on mobile
 
-4.  **Learn more**
+---
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+  **Links**
 
-## 🚀 Quick start (Netlify)
+  - [Gatsby](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+  - [React](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+  - [Typescript](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+  - [Tailwind](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+  - [GraphQL](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+  - [ESLint](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+  - [Prettier](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+  - [Shad/UI](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
