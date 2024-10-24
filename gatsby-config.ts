@@ -12,16 +12,49 @@ const config: GatsbyConfig = {
   plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/content/images/icon.png"
     }
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", `gatsby-transformer-remark`, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
-      "path": "./src/images/"
+      "path": "./src/content/images"
     },
     __key: "images"
-  }]
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "content",
+      "path": "./src/content"
+    },
+    __key: "content"
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "posts",
+      "path": "./src/content/posts"
+    },
+    __key: "posts"
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "current",
+      "path": "./src/content/members/current"
+    },
+    __key: "current"
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "past",
+      "path": "./src/content/members/past"
+    },
+    __key: "past"
+  }
+]
 };
 
 export default config;

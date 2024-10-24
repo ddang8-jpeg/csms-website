@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
@@ -24,6 +25,7 @@
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "postcss": "^8.4.47",
     "react": "^18.2.0",
@@ -31,9 +33,15 @@
     "tailwindcss": "^3.4.14"
   },
   "devDependencies": {
+    "@eslint/js": "^9.13.0",
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
-    "typescript": "^5.3.3"
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.11.0"
   }
 }
