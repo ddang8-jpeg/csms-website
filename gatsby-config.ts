@@ -14,13 +14,10 @@ const config: GatsbyConfig = {
     resolve: 'gatsby-plugin-manifest',
     options: {
       name: "CSMS Website",
-      short: "CSMS-Site",
       start_url: "/",
-      background_color: twConfig.theme.extend.colors.white,
-      theme_color: twConfig.theme.extend.colors.darkBlue,
       icon: "src/content/images/icon.png"
     }
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", `gatsby-transformer-remark`, {
+  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -59,7 +56,8 @@ const config: GatsbyConfig = {
       "path": "./src/content/members/past"
     },
     __key: "past"
-  }
+  },
+  `gatsby-transformer-remark`
 ]
 };
 
