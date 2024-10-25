@@ -61,6 +61,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions,
       }
       currentRemark: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/members/current/" } }
+        sort: { frontmatter: { id: ASC } }
         limit: 2000
       ) {
         edges {
