@@ -9,15 +9,16 @@
 
 ## About this repository
 
-  **Introduction:**
+**Introduction:**
 
-  This is a website for the Computational Sensory-Motor Systems Laboratory based in the Whiting School of Engineering at Johns Hopkins.
+This is a website for the Computational Sensory-Motor Systems Laboratory based in the Whiting School of Engineering at Johns Hopkins.
 
 ---
 
 **Tech Stack:**
 
 - **Frontend:**
+
   - **Gatsby**: React-based static site generator for building fast, optimized websites
   - **React**: JavaScript library for building user interfaces
   - **GraphQL**: API query language used by Gatsby to fetch data at build time
@@ -25,12 +26,15 @@
   - **Tailwind**: Utility-first CSS framework for styling components efficiently
 
 - **Backend / CMS:**
+
   - **GraphQL API**: Used for fetching data from the CMS into Gatsby
 
 - **Hosting / Deployment:**
+
   - **GitHub**: Version control and repository hosting
 
 - **Utilities:**
+
   - **ESLint**: Linting JavaScript code for consistent styling
   - **Prettier**: Code formatter for ensuring a clean codebase
 
@@ -42,15 +46,13 @@
 
 ---
 
-  **Links**
+**Links**
 
-  - [Gatsby](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-  - [React](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-  - [Typescript](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-  - [Tailwind](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-  - [GraphQL](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-  - [ESLint](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-  - [Prettier](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-  - [Shad/UI](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-
+- [Gatsby](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [React](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [Typescript](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [Tailwind](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [GraphQL](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [ESLint](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [Prettier](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- [Shad/UI](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)

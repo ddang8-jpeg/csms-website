@@ -22,16 +22,16 @@ interface QueryResult {
   };
 }
 
-export const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] = ({ actions }) => {
+export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        "@/components": path.resolve(__dirname, "src/components"),
-        "@/lib/utils": path.resolve(__dirname, "src/lib/utils"),
+        '@/components': path.resolve(__dirname, 'src/components'),
+        '@/lib/utils': path.resolve(__dirname, 'src/lib/utils'),
       },
     },
-  })
-}
+  });
+};
 
 export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;

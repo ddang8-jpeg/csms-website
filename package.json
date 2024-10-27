@@ -1,6 +1,7 @@
 {
   "name": "csms-website",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "description": "csms-website",
   "author": "ddang8-jpeg",
@@ -14,7 +15,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --quiet --fix"
   },
   "dependencies": {
     "@nextui-org/button": "^2.0.38",
@@ -51,10 +53,21 @@
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
-    "eslint": "^7.32.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-react": "^7.37.2",
     "globals": "^15.11.0",
     "husky": "^9.1.6",
+    "prettier": "^3.3.3",
     "typescript": "^5.3.3",
     "typescript-eslint": "^8.11.0"
   }

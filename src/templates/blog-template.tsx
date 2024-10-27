@@ -1,7 +1,26 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 
-const BlogTemplate = ({ data }: any) => {
+// Define the types for the expected data structure
+interface Frontmatter {
+  slug: string;
+  title: string;
+  date: string;
+  post: string;
+}
+
+interface MarkdownRemark {
+  frontmatter: Frontmatter;
+  html: string;
+}
+
+interface BlogTemplateProps extends PageProps {
+  data: {
+    markdownRemark: MarkdownRemark;
+  };
+}
+
+const BlogTemplate: React.FC<BlogTemplateProps> = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 

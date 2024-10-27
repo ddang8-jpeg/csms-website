@@ -1,7 +1,22 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 
-const CurrentMemberTemplate = ({ data }: any) => {
+interface Frontmatter {
+  slug: string;
+  name: string;
+  bio: string;
+}
+interface MarkdownRemark {
+  frontmatter: Frontmatter;
+  html: string;
+}
+interface CurrentMemberTemplateProps extends PageProps {
+  data: {
+    markdownRemark: MarkdownRemark;
+  };
+}
+
+const CurrentMemberTemplate: React.FC<CurrentMemberTemplateProps> = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
