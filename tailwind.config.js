@@ -1,18 +1,26 @@
 import { nextui } from '@nextui-org/theme';
+import daisyui from "daisyui"
 
 /** @type {import('tailwindcss').Config} */
 export const content = [
   './src/pages/**/*.{js,jsx,ts,tsx}',
   './src/components/**/*.{js,jsx,ts,tsx}',
   './node_modules/@nextui-org/theme/dist/components/(button|link|navbar|ripple|spinner).js',
+  "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+
 ];
 export const theme = {
   extend: {
     colors: {
-      darkBlue: '#002D72',
-      lightBlue: '#68ACE5',
+      // Colors set using branding guides from https://brand.jhu.edu/visual-identity/colors/
+      darkBlue: 'var(--color-dark-blue, #002D72)',
+      lightBlue: 'var(--color-light-blue, #68ACE5)',
       mediumBlue: '#0077D8',
       harborBlue: '#4E97E0',
+
+      primary: 'var(--color-dark-blue)', 
+      secondary: 'var(--color-light-blue)', 
+      
     },
     borderRadius: {
       lg: 'var(--radius)',
@@ -23,7 +31,25 @@ export const theme = {
 };
 export const darkMode = 'class';
 export const plugins = [
+  daisyui,
+  function ({ addComponents, theme }) {
+    addComponents({
+      '.btn-darkBlue': {
+        backgroundColor: theme('colors.darkBlue'), // Referencing custom color
+        color: theme('colors.white'),
+        padding: '0.5rem 1rem',
+        borderRadius: '0.25rem',
+        fontWeight: 'bold',
+        '&:hover': {
+          backgroundColor: theme('colors.darkBlue', '#000070'), // optional fallback
+        },
+      },
+    });
+  },
   nextui({
+    prefix:'nextui',
+    addCommonColors: 'false',
+    defaultTheme:'light',
     layout: {
       dividerWeight: '1px', // h-divider the default height applied to the divider component
       disabledOpacity: 0.5, // this value is applied as opacity-[value] when the component is disabled

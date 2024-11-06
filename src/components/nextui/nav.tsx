@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/navbar';
 import { Link } from '@nextui-org/link';
-import { Content } from '@/components/content';
 import { NextUIProvider } from '@nextui-org/system';
 
-export default function Nav() {
+const Nav: React.FC = () => {
   return (
-    <NextUIProvider>
       <Navbar shouldHideOnScroll>
         <NavbarBrand>
-          <p className="font-bold text-inherit">CSMS</p>
+          <p className="font-bold text-inherit">
+            <Link color='primary' href="/">CSMS</Link>
+          </p>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="end">
           <NavbarItem>
@@ -23,7 +23,7 @@ export default function Nav() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="/team/">
               Team
             </Link>
           </NavbarItem>
@@ -37,9 +37,13 @@ export default function Nav() {
               News
             </Link>
           </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="/test/">
+              Test
+            </Link>
+          </NavbarItem>
         </NavbarContent>
       </Navbar>
-      <Content />
-    </NextUIProvider>
   );
-}
+};
+export default Nav;
