@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <div
       className="hero min-h-full"
       style={{
-        backgroundImage: `url(/images/hero.jpg)`,
+        backgroundImage: `url(/static/images/hero.jpg)`,
       }}
     >
       <div className="hero-overlay bg-opacity-50"></div>
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
             exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
           </p>
-          <NextButton size='lg' color='primary' className= 'text-white'>Our Story</NextButton>
+          <NextButton size='lg' className= 'bg-darkBlue text-white'>Our Story</NextButton>
         </div>
       </div>
     </div>

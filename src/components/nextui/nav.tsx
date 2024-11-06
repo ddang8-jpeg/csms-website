@@ -1,14 +1,13 @@
 import * as React from 'react';
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/navbar';
 import { Link } from '@nextui-org/link';
-import { NextUIProvider } from '@nextui-org/system';
 
 const Nav: React.FC = () => {
   return (
       <Navbar shouldHideOnScroll>
         <NavbarBrand>
           <p className="font-bold text-inherit">
-            <Link color='primary' href="/">CSMS</Link>
+            <Link color="primary" href="/" className='text-xl'>CSMS</Link>
           </p>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="end">

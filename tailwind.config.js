@@ -18,8 +18,8 @@ export const theme = {
       mediumBlue: '#0077D8',
       harborBlue: '#4E97E0',
 
-      primary: 'var(--color-dark-blue)', 
-      secondary: 'var(--color-light-blue)', 
+      primary: ' #002D72',
+      secondary: '#68ACE5', 
       
     },
     borderRadius: {

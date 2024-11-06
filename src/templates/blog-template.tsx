@@ -6,7 +6,6 @@ interface Frontmatter {
   slug: string;
   title: string;
   date: string;
-  post: string;
 }
 
 interface MarkdownRemark {
@@ -28,7 +27,6 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data }) => {
     <div>
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.date}</h2>
-      <h2>{frontmatter.post}</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   );
@@ -41,7 +39,6 @@ export const query = graphql`
         slug
         title
         date(formatString: "MMMM DD, YYYY")
-        post
       }
       html
     }
