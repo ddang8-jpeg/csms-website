@@ -4,13 +4,13 @@ import Content from '@/components/content';
 import type { HeadFC, PageProps } from 'gatsby';
 import { NextUIProvider } from '@nextui-org/system';
 
-const TeamPage: React.FC<PageProps> = () => {
+const PapersPage: React.FC<PageProps> = () => {
   return (
     <NextUIProvider>
-      <Nav  activePage='team'/>
+      <Nav  activePage='papers'/>
       <Content />
     </NextUIProvider>
   );
 };
-export default TeamPage;
-export const Head: HeadFC = () => <title>Our Team - CSMS at JHU</title>;
+export default PapersPage;
+export const Head: HeadFC = () => <title>Published Paper - CSMS at JHU</title>;

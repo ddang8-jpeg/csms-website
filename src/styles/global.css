@@ -6,3 +6,10 @@
     --radius: 0.5rem;
   }
 }
+.redText 
+{ 
+    color: red; 
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 5rem;
+} 
