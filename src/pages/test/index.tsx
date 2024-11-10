@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 import Nav from '@/components/nextui/nav';
 import Hero from '@/components/daisyui/hero';
 import NewsCarousel from '@/components/daisyui/post-carousel';
@@ -18,7 +19,15 @@ const TestPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </div>
-      <Content />
+      <div className='mb-4 py-4'>
+        <Content />
+      </div>
+      <StaticImage
+        src="static/images/hero.jpg"
+        alt="CMOS Mihalas-Niebur Model using switch capacitors"
+        placeholder="blurred"
+      />
+      <img src="/images/hero.png" alt="Logo" />
     </NextUIProvider>
   );
 };

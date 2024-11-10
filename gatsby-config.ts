@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from 'gatsby';
+import path from 'path';
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -19,6 +20,13 @@ const config: GatsbyConfig = {
         name: 'CSMS Website',
         start_url: '/',
         icon: 'src/content/images/icon.png',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, "src"),
+        static: path.join(__dirname, "static"),
       },
     },
     'gatsby-plugin-sharp',

@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <div
       className="hero min-h-full"
       style={{
-        backgroundImage: `url(/static/images/hero.jpg)`,
+        backgroundImage: `url(/images/hero.jpg)`,
       }}
     >
       <div className="hero-overlay bg-opacity-50"></div>
