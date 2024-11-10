@@ -52,14 +52,12 @@ const PostsCarousel: React.FC = () => {
   }));
 
   return (
-    <div color="primary" className="carousel carousel-center rounded-box max-w-full space-x-4 py-10">
-      <div className='carousel-item w-2/12'></div>
-      {posts.map((post) => (
-        <div className='carousel-item'>
+    <div color="primary" className="carousel carousel-vertical max-h-[480px]">
+      {posts.map((post, index) => (
+        <div key={index} className='carousel-item max-w-[400px] h-full'>
           <PostsCard title={post.title} date={post.date} post={post.html} slug={post.slug} />
         </div>
       ))}
-      <div className='carousel-item w-2/12'></div>
     </div>
   );
 };
