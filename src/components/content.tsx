@@ -2,43 +2,42 @@ import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 
 export const Content = () => (
-  <div className='justify-center text-justify font-light'>
-    <p className='mb-4'>
-      Over the past 25 years, Ralph Etienne-Cummings’ research has developed through three main phases. In the
-      early part of his career, he studied biologically inspired sensors and sensory computation systems, primarily
-      in the form of vision sensors. Typically, these systems were implemented with Very Large Scale Integrated
-      (VLSI) technology and were used to extract information about the environment and to guide the “attention” of
-      other computation systems.
+  <div className="justify-center text-justify font-light ">
+    <p className="mb-4 bg-white p-4 rounded-md">
+      Over the past 25 years, Ralph Etienne-Cummings’ research has developed through three main phases. In the early
+      part of his career, he studied biologically inspired sensors and sensory computation systems, primarily in the
+      form of vision sensors. Typically, these systems were implemented with Very Large Scale Integrated (VLSI)
+      technology and were used to extract information about the environment and to guide the “attention” of other
+      computation systems.
     </p>
 
-    <p className='mb-4'>
-      In the middle part of his career, he studied how these systems can be hosted onto
-      robots. At that point he also started to model spinal neural circuits in silicon, and develop robots to study
-      legged locomotion. Both VLSI circuits and biomorphic robots were developed and used in these studies. More
-      recently, he has evolved this work to include brain-machine interfaces and neural prosthesis devices.
-      Specifically, he started looking at spinal and cortical prosthesis devices and robotic systems to restore
-      function after injury and for human augmentation. This area has required close collaboration with
-      neuroscientists to gain access to animal models (i.e. lamprey, cat, ferret and monkey preparations).
+    <p className="mb-4 bg-white p-4 rounded-md">
+      In the middle part of his career, he studied how these systems can be hosted onto robots. At that point he also
+      started to model spinal neural circuits in silicon, and develop robots to study legged locomotion. Both VLSI
+      circuits and biomorphic robots were developed and used in these studies. More recently, he has evolved this work
+      to include brain-machine interfaces and neural prosthesis devices. Specifically, he started looking at spinal and
+      cortical prosthesis devices and robotic systems to restore function after injury and for human augmentation. This
+      area has required close collaboration with neuroscientists to gain access to animal models (i.e. lamprey, cat,
+      ferret and monkey preparations).
     </p>
 
-    <div className='my-10'>
+    <div className="my-10">
       <StaticImage
-        src="../../static/images/landing/MN_circuit.png"
+        src="../../static/images/MN_circuit.png"
         alt="CMOS Mihalas-Niebur Model using switch capacitors"
         placeholder="blurred"
       />
     </div>
 
-    <p>
+    <p className="mb-4 bg-white p-4 rounded-md">
       His work has the potential to produce computers that can perform recognition tasks as effortlessly living
-      organism, legged robots that are as efficient and elegant as humans and prosthetics than can seamlessly
-      interface with the human body to restore functionality after injury or to overcome disease. Lastly, we have
-      also been working on developing miniaturized ultrasound phased arrays, developing interstitial high intensity
-      ultrasound ablation and monitoring system, and most recently we focused on developing ultrasonically “smart”
-      tools.
+      organism, legged robots that are as efficient and elegant as humans and prosthetics than can seamlessly interface
+      with the human body to restore functionality after injury or to overcome disease. Lastly, we have also been
+      working on developing miniaturized ultrasound phased arrays, developing interstitial high intensity ultrasound
+      ablation and monitoring system, and most recently we focused on developing ultrasonically “smart” tools.
     </p>
 
-    <ol className="my-4 mx-8 list-decimal">
+    <ol className="my-4 list-decimal bg-white p-4 pl-8 rounded-md">
       <li>VLSI implementation of large scale neural systems for sensory information processing.</li>
       <li>Development of neurally inspired control systems for legged robots.</li>
       <li>Development of neural prosthetic devices for lower and upper limbs.</li>
@@ -46,15 +45,13 @@ export const Content = () => (
       <li>Image and video analysis for activity recognition and control.</li>
     </ol>
 
-    <p>
-      His work has the potential to produce computers that can perform recognition tasks as effortlessly 
-      living organism, legged robots that are as efficient and elegant as humans and prosthetics than can 
-      seamlessly interface with the human body to restore functionality after injury or to overcome disease. 
-      Lastly, we have also been working on developing miniaturized ultrasound phased arrays, developing interstitial 
-      high intensity ultrasound ablation and monitoring system, and most recently we focused on developing 
-      ultrasonically “smart” tools.
+    <p className="mb-4 bg-white p-4 rounded-md">
+      His work has the potential to produce computers that can perform recognition tasks as effortlessly living
+      organism, legged robots that are as efficient and elegant as humans and prosthetics than can seamlessly interface
+      with the human body to restore functionality after injury or to overcome disease. Lastly, we have also been
+      working on developing miniaturized ultrasound phased arrays, developing interstitial high intensity ultrasound
+      ablation and monitoring system, and most recently we focused on developing ultrasonically “smart” tools.
     </p>
-
   </div>
 );
 

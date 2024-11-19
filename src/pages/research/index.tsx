@@ -7,7 +7,7 @@ import { NextUIProvider } from '@nextui-org/system';
 const ResearchPage: React.FC<PageProps> = () => {
   return (
     <NextUIProvider>
-      <Nav  activePage='research'/>
+      <Nav activePage="research" />
       <Content />
     </NextUIProvider>
   );

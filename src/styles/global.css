@@ -4,12 +4,21 @@
 @layer base {
   :root {
     --radius: 0.5rem;
+    --color-dark-blue: #002D72;
+    --color-light-blue: #68ACE5;
+    --color-light-blue-300: #BDDBF4;
+
   }
 }
-.redText 
-{ 
-    color: red; 
-    font-weight: 500;
-    font-size: 5rem;
-    line-height: 5rem;
-} 
+
+.carousel {
+  scroll-snap-type: none !important;  /* Disable snapping on the container */
+}
+
+.carousel-item {
+  scroll-snap-align: none !important;  /* Disable snapping for individual items */
+}
+
+html {
+  scroll-behavior: smooth;  /* Ensure smooth scrolling when clicking anchor links */
+}

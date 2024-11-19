@@ -25,12 +25,20 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
-        src: path.join(__dirname, "src"),
-        static: path.join(__dirname, "static"),
+        src: path.join(__dirname, 'src'),
+        static: path.join(__dirname, 'static'),
       },
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'slider',
+        path: './src/content/images/team/slider',
+      },
+      __key: 'slider',
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

@@ -1,5 +1,8 @@
 import React from 'react';
 import { graphql, PageProps } from 'gatsby';
+import { NextUIProvider } from '@nextui-org/system';
+import Header from '@/components/daisyui/header';
+import Nav from '@/components/nextui/nav';
 
 interface Frontmatter {
   slug: string;
@@ -22,9 +25,13 @@ const CurrentMemberTemplate: React.FC<CurrentMemberTemplateProps> = ({ data }) =
 
   return (
     <div>
-      <h1>{frontmatter.name}</h1>
-      <h2>{frontmatter.bio}</h2>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <NextUIProvider>
+        <Nav activePage="team" />
+        <Header title={frontmatter.name} />
+        <h1>{frontmatter.name}</h1>
+        <h2>{frontmatter.bio}</h2>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </NextUIProvider>
     </div>
   );
 };

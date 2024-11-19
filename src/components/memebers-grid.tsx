@@ -1,16 +1,14 @@
 import * as React from 'react';
-import PostsCard from '@/components/nextui/posts-card';
 import { graphql, useStaticQuery } from 'gatsby';
-
+import CurrentCard from '@/components/nextui/current-card';
 interface Frontmatter {
+  name: string;
   title: string;
-  date: string;
   slug: string;
 }
 
 interface MarkdownRemarkNode {
   frontmatter: Frontmatter;
-  html: string;
 }
 
 interface GraphQLQueryResult {
@@ -21,23 +19,21 @@ interface GraphQLQueryResult {
   };
 }
 
-const PostsCarousel: React.FC = () => {
+const MembersGrid: React.FC = () => {
   // Use the GraphQL query to get data
   const data: GraphQLQueryResult = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/posts/" } }
-        sort: { frontmatter: { date: DESC } }
-        limit: 10
+        filter: { fileAbsolutePath: { regex: "/content/members/current/" } }
+        sort: { frontmatter: { order: ASC } }
       ) {
         edges {
           node {
             frontmatter {
-              title
-              date
               slug
+              name
+              title
             }
-            html
           }
         }
       }
@@ -45,21 +41,20 @@ const PostsCarousel: React.FC = () => {
   `);
 
   const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
+    name: node.frontmatter.name,
     title: node.frontmatter.title,
-    date: node.frontmatter.date,
-    html: node.html,
     slug: node.frontmatter.slug,
   }));
 
   return (
-    <div color="primary" className="relative carousel carousel-vertical max-h-[600px] mx-auto items-center">
+    <div color="primary" className="grid grid-cols-2 md:grid-cols-3 gap-6">
       {posts.map((post, index) => (
-        <div key={index} className="carousel-item max-w-[400px]">
-          <PostsCard title={post.title} date={post.date} post={post.html} slug={post.slug} />
+        <div key={index}>
+          <CurrentCard title={post.title} name={post.name} slug={post.slug} />
         </div>
       ))}
     </div>
   );
 };
 
-export default PostsCarousel;
+export default MembersGrid;

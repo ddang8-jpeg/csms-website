@@ -1,36 +1,45 @@
+const { nextui } = require('@nextui-org/theme');
+import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
 import { nextui } from '@nextui-org/theme';
-import daisyui from "daisyui"
+import daisyui from 'daisyui';
 
 /** @type {import('tailwindcss').Config} */
 export const content = [
   './src/pages/**/*.{js,jsx,ts,tsx}',
   './src/components/**/*.{js,jsx,ts,tsx}',
   './node_modules/@nextui-org/theme/dist/components/(button|link|navbar|ripple|spinner).js',
-  "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-
+  './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+  extract,
 ];
 export const theme = {
+  screens,
+  fontSize,
   extend: {
     colors: {
       // Colors set using branding guides from https://brand.jhu.edu/visual-identity/colors/
       darkBlue: 'var(--color-dark-blue, #002D72)',
       lightBlue: 'var(--color-light-blue, #68ACE5)',
+      'lightBlue-300': 'var(--color-light-blue-300, #bddbf4)',
+
       mediumBlue: '#0077D8',
       harborBlue: '#4E97E0',
 
       primary: ' #002D72',
-      secondary: '#68ACE5', 
-      
+      secondary: '#68ACE5',
     },
     borderRadius: {
       lg: 'var(--radius)',
       md: 'calc(var(--radius) - 2px)',
       sm: 'calc(var(--radius) - 4px)',
     },
+    fontSize: {
+      dynamic: ['clamp(1.2rem, 2.5vw, 1.5rem)', '1.5'],
+    },
   },
 };
 export const darkMode = 'class';
 export const plugins = [
+  fluid,
   daisyui,
   function ({ addComponents, theme }) {
     addComponents({
@@ -47,9 +56,9 @@ export const plugins = [
     });
   },
   nextui({
-    prefix:'nextui',
+    prefix: 'nextui',
     addCommonColors: 'false',
-    defaultTheme:'light',
+    defaultTheme: 'light',
     layout: {
       dividerWeight: '1px', // h-divider the default height applied to the divider component
       disabledOpacity: 0.5, // this value is applied as opacity-[value] when the component is disabled
