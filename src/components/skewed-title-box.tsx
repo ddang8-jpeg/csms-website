@@ -1,16 +1,54 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 interface SkewedTitleBoxProps {
   text: string;
-  bgColor?: string;
+  delay?: string;
   textColor?: string;
 }
 
-const SkewedTitleBox: React.FC<SkewedTitleBoxProps> = ({ text, bgColor = 'bg-darkBlue', textColor = 'text-white' }) => {
+const SkewedTitleBox: React.FC<SkewedTitleBoxProps> = ({ text, delay = '0.1s', textColor = 'text-white' }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const boxRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }, // Trigger when 10% of the element is visible
+    );
+
+    if (boxRef.current) {
+      observer.observe(boxRef.current);
+    }
+
+    return () => {
+      if (boxRef.current) {
+        observer.unobserve(boxRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className={`relative overflow-hidden ${bgColor} skew-x-12 py-2 px-8 mx-3 mt-4 mb-6`}>
-      <div className="relative -skew-x-12">
-        <p className={`text-4xl font-black font-mono ${textColor}`}>{text}</p>
+    <div className="-ml-5 my-2 py-2 px-4 mx-auto relative z-10">
+      <div
+        ref={boxRef}
+        className={`before:block before:absolute before:-inset-1 before:-skew-x-12 before:bg-darkBlue relative py-2 px-8`}
+        style={{
+          transform: isVisible ? 'translateX(0%)' : 'translateX(10%)',
+          maxWidth: 'calc(100vw - 20px)',
+          opacity: isVisible ? 1 : 0,
+          transition: 'transform 1s ease-out, opacity 1s ease-out',
+          transitionDelay: delay,
+          display: 'inline-block',
+        }}
+      >
+        <span className={`relative text-3xl font-mono ${textColor}`} style={{ whiteSpace: 'nowrap' }}>
+          {text}
+        </span>
+        <hr className="relative h-[1px] bg-white rounded mt-2" />
       </div>
     </div>
   );
