@@ -48,7 +48,7 @@ const SkewedTitleBox: React.FC<SkewedTitleBoxProps> = ({ text, delay = '0.1s', t
         <span className={`relative text-3xl font-mono ${textColor}`} style={{ whiteSpace: 'nowrap' }}>
           {text}
         </span>
-        <hr className="relative h-[1px] bg-white rounded mt-2" />
+        <hr className="relative h-[1px] bg-white rounded border-0 mt-2" />
       </div>
     </div>
   );

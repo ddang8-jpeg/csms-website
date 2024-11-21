@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PostsCard from '@/components/nextui/posts-card';
+import PostsCard from '@/components/nextui/posts-carousel-card';
 import { graphql, useStaticQuery } from 'gatsby';
 
 interface Frontmatter {
@@ -52,9 +52,9 @@ const PostsCarousel: React.FC = () => {
   }));
 
   return (
-    <div color="primary" className="relative carousel carousel-vertical max-h-[600px] mx-auto items-center">
+    <div color="primary" className="relative carousel carousel-vertical max-h-[600px] max-w-sm mx-auto items-center">
       {posts.map((post, index) => (
-        <div key={index} className="carousel-item max-w-[400px]">
+        <div key={index} className="carousel-item">
           <PostsCard title={post.title} date={post.date} post={post.html} slug={post.slug} />
         </div>
       ))}

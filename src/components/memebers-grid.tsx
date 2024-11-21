@@ -47,7 +47,7 @@ const MembersGrid: React.FC = () => {
   }));
 
   return (
-    <div color="primary" className="grid grid-cols-2 md:grid-cols-3 gap-6">
+    <div color="primary" className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 items-stretch">
       {posts.map((post, index) => (
         <div key={index}>
           <CurrentCard title={post.title} name={post.name} slug={post.slug} />

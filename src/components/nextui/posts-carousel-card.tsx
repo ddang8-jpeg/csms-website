@@ -9,14 +9,18 @@ interface Props {
   slug: string;
 }
 
-const PostCard: React.FC<Props> = ({ title, date, post, slug }) => {
+const PostCarouselCard: React.FC<Props> = ({ title, date, post, slug }) => {
   return (
     <Link to={`/blog/${slug}`}>
-      <Card className="mb-4 max-h-[400px]" shadow="none" isHoverable>
+      <Card
+        className="m-2 max-h-[400px] hover:bg-gray-50 shadow-none hover:shadow-md transition-shadow duration-300"
+        shadow="none"
+      >
         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
           <p className="text-tiny uppercase font-bold">The News</p>
           <small className="text-default-500">{date}</small>
           <h4 className="font-bold text-large">{title}</h4>
+          <hr className="w-[80%] h-[2px] my-2 bg-darkBlue border-0 rounded" />
         </CardHeader>
         <CardBody className="overflow-visible py-2" dangerouslySetInnerHTML={{ __html: post }} />
       </Card>
@@ -24,4 +28,4 @@ const PostCard: React.FC<Props> = ({ title, date, post, slug }) => {
   );
 };
 
-export default PostCard;
+export default PostCarouselCard;

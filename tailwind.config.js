@@ -19,7 +19,7 @@ export const theme = {
       // Colors set using branding guides from https://brand.jhu.edu/visual-identity/colors/
       darkBlue: 'var(--color-dark-blue, #002D72)',
       lightBlue: 'var(--color-light-blue, #68ACE5)',
-      'lightBlue-300': 'var(--color-light-blue-300, #bddbf4)',
+      'lightBlue-300': 'var(--color-light-blue-300, ##e2f2ff)',
 
       mediumBlue: '#0077D8',
       harborBlue: '#4E97E0',
