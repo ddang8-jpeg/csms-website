@@ -43,13 +43,20 @@ const PostsGrid: React.FC = () => {
     }
   `);
 
-  const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
-    title: node.frontmatter.title,
-    date: node.frontmatter.date,
-    year: new Date(node.frontmatter.date).getFullYear().toString(),
-    html: node.html,
-    slug: node.frontmatter.slug,
-  }));
+  // Normalize the date and extract the year correctly
+  const posts = data.allMarkdownRemark.edges.map(({ node }) => {
+    const date = new Date(node.frontmatter.date);
+    // Normalize date to UTC midnight (stripping off time zone effects)
+    const normalizedYear = new Date(Date.UTC(date.getUTCFullYear(), 0, 1)); // Use January 1st, the normalized date
+
+    return {
+      title: node.frontmatter.title,
+      date: node.frontmatter.date,
+      year: normalizedYear.getUTCFullYear(), // Use UTC year to avoid time zone issues
+      html: node.html,
+      slug: node.frontmatter.slug,
+    };
+  });
 
   // Group posts by year
   const groupedPosts = posts.reduce(
@@ -59,29 +66,34 @@ const PostsGrid: React.FC = () => {
       acc[year].push(post);
       return acc;
     },
-    {} as Record<string, typeof posts>,
+    {} as Record<number, typeof posts>,
   );
+
+  // Sort grouped posts by year in descending order
+  const sortedGroupedPosts = Object.entries(groupedPosts)
+    .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA)) // Sort by year descending
+    .map(([year, yearPosts]) => ({
+      year,
+      posts: yearPosts,
+    }));
 
   return (
     <div className="my-4 relative max-w-6xl">
-      {Object.entries(groupedPosts)
-        .slice()
-        .reverse()
-        .map(([year, yearPosts]) => (
-          <div key={year} className="mb-10">
-            {/* Year Header */}
-            <SkewedTitleBox text={year} />
+      {sortedGroupedPosts.map(({ year, posts }) => (
+        <div key={year} className="mb-10">
+          {/* Year Header */}
+          <SkewedTitleBox text={year.toString()} />
 
-            {/* Posts for the Year */}
-            <div className="relative md:mx-8 mt-4 bottom-8 bg-lightBlue-300 py-10 px-2 lg:px-12 rounded-md shadow-lg shadow-slate-400">
-              <div color="primary" className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
-                {yearPosts.map((post, index) => (
-                  <PostsCard key={index} title={post.title} date={post.date} post={post.html} slug={post.slug} />
-                ))}
-              </div>
+          {/* Posts for the Year */}
+          <div className="relative md:mx-8 mt-4 bottom-8 bg-lightBlue-300 py-10 px-2 lg:px-12 rounded-md shadow-lg shadow-slate-400">
+            <div color="primary" className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
+              {posts.map((post, index) => (
+                <PostsCard key={index} title={post.title} date={post.date} post={post.html} slug={post.slug} />
+              ))}
             </div>
           </div>
-        ))}
+        </div>
+      ))}
     </div>
   );
 };
