@@ -9,12 +9,12 @@ import PapersGrid from '@/components/papers-grid';
 const PapersPage: React.FC<PageProps> = () => {
   return (
     <NextUIProvider>
-      <div className="relative flex flex-col">
+      <div className="flex flex-col w-full mx-auto">
         <Nav activePage="papers" />
         <Header title={'Papers'} />
-        <div className="flex flex-col justify-center sm:flex-row mt-2 mb-12">
-          <div className="relative md:mx-8 bg-lightBlue-300 py-10 px-2 md:px-6 rounded-md md:shadow-lg shadow-slate-400">
-            <div className="flex flex-col max-w-2xl"></div>
+        <div className="relative max-w-6xl w-full mx-auto mt-2 mb-12">
+          <div className="md:mx-8 bg-lightBlue-300 py-10 px-2 md:px-6 rounded-md md:shadow-lg shadow-slate-400">
+            <div className="flex-col max-w-2xl"></div>
             <PapersGrid />
           </div>
         </div>
