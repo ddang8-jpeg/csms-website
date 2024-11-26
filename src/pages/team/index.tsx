@@ -7,6 +7,7 @@ import Footer from '@/components/daisyui/footer';
 import SkewedTitleBox from '@/components/skewed-title-box';
 import MembersGrid from '@/components/memebers-grid';
 import PICard from '@/components/nextui/pi-card';
+import ImageCarousel from '@/components/daisyui/image-carousel';
 
 const TeamPage: React.FC<PageProps> = () => {
   return (
@@ -16,6 +17,10 @@ const TeamPage: React.FC<PageProps> = () => {
         <Header title={'Our Team'} />
         <div className="flex flex-col mx-auto items-center justify-center">
           <div className="max-w-6xl">
+            <SkewedTitleBox text="Gallery" />
+            <div className="relative md:mx-8 bottom-8 bg-lightBlue-300 py-10 px-2 md:px-8 rounded-md shadow-lg shadow-slate-400">
+              <ImageCarousel />
+            </div>
             <SkewedTitleBox text="Principle Investigator" />
             <div className="relative md:mx-8 bottom-8 bg-lightBlue-300 py-10 px-2 lg:px-24 rounded-md shadow-lg shadow-slate-400">
               <PICard name="Ralph Etienne-Cummings" title="Julian S. Smith Professor" slug="john-doe" />

@@ -80,7 +80,7 @@ const ImageCarousel: React.FC = () => {
   }
 
   return (
-    <div className="carousel-container flex flex-col relative my-6">
+    <div className="carousel-container w-full relative my-6">
       <div className="carousel-slide max-w-full aspect-w-16 aspect-h-9">
         <GatsbyImage
           image={images[currentIndex].image}
