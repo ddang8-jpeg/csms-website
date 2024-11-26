@@ -38,7 +38,7 @@ const PICard: React.FC<Props> = ({ name, title, slug }) => {
           </div>
           <div className="flex flex-col mx-6 px-6 mt-10 md:mt-0 w-full justify-center">
             <p className="font-bold text-4xl">{name}</p>
-            <hr className="h-[2px] my-2 bg-darkBlue border-0 rounded" />
+            <hr className="h-[2px] my-2 bg-darkBlue border-0 rounded w-[0%] group-hover:w-[100%] ease-in-out duration-200" />
             <p className="text-xl uppercase font-light">{title}</p>
           </div>
         </CardHeader>

@@ -7,6 +7,7 @@ import daisyui from 'daisyui';
 export const content = [
   './src/pages/**/*.{js,jsx,ts,tsx}',
   './src/components/**/*.{js,jsx,ts,tsx}',
+  './src/content/**/*.{md,json}',
   './node_modules/@nextui-org/theme/dist/components/(button|link|navbar|ripple|spinner).js',
   './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   extract,

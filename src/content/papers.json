@@ -1,0 +1,1327 @@
+[
+  {
+    "title": "Proto-Object Based Saliency Model with Second-Order Texture Feature",
+    "subtitle": "Uejima, Niebur, and Etienne-Cummings. 2018. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BIOCAS.2018.8584749"
+  },
+  {
+    "title": "Automated Tracking System for Identification of Tagged Mice for Automatic Social Behavior Analysis",
+    "subtitle": "Marcuccio, Savonenko, and Etienne-Cummings. 2018. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BIOCAS.2018.8584712"
+  },
+  {
+    "title": "Computational stereo-vision model of proto-object based saliency in three-dimensional space",
+    "subtitle": "Mancinelli, Niebur, and Etienne-Cummings. 2018. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BIOCAS.2018.8584679"
+  },
+  {
+    "title": "The Challenges of Designing an Inductively Coupled Power Link for μm-sized On-Chip Coils",
+    "subtitle": "Khalifa et al. 2018. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BIOCAS.2018.8584781"
+  },
+  {
+    "title": "Large-Scale Neuromorphic Spiking Array Processors: A Quest to Mimic the Brain",
+    "subtitle": "Thakur et al. 2018. Frontiers in Neuroscience.",
+    "doi": "http://dx.doi.org/10.3389/fnins.2018.00891"
+  },
+  {
+    "title": "A Model-Based Systems Engineering Approach to Trade Space Exploration of Implanted Wireless Biotelemetry Communication Systems",
+    "subtitle": "Duncan and Etienne-Cummings. 2018. IEEE Systems Journal.",
+    "doi": "http://dx.doi.org/10.1109/JSYST.2018.2874102"
+  },
+  {
+    "title": "Using Deep Learning to Extract Scenery Information in Real Time Spatiotemporal Compressed Sensing",
+    "subtitle": "Wang et al. 2018. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2018.8351736"
+  },
+  {
+    "title": "An Unsupervised Compressed Sensing Algorithm for Multi-Channel Neural Recording and Spike Sorting",
+    "subtitle": "Xiong et al. 2018. IEEE Transactions on Neural Systems and Rehabilitation Engineering.",
+    "doi": "http://dx.doi.org/10.1109/TNSRE.2018.2830354"
+  },
+  {
+    "title": "An analogue neuromorphic Co-processor that utilizes device mismatch for learning applications",
+    "subtitle": "Thakur et al. 2018. IEEE Transactions on Circuits and Systems I: Regular Papers.",
+    "doi": "http://dx.doi.org/10.1109/TCSI.2017.2756878"
+  },
+  {
+    "title": "The Microbead: A Highly Miniaturized Wirelessly Powered Implantable Neural Stimulating System",
+    "subtitle": "Khalifa et al. 2018. IEEE Transactions on Biomedical Circuits and Systems.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2018.2802443"
+  },
+  {
+    "title": "Compressed Sensing for High Density Neural Recording",
+    "subtitle": "Zhang et al. 2017. CMOS Circuits for Biological Sensing and Processing.",
+    "doi": "http://dx.doi.org/10.1007/978-3-319-67723-1_12"
+  },
+  {
+    "title": "Spatiotemporal compressed sensing for video compression",
+    "subtitle": "Xiong et al. 2017.",
+    "doi": "http://dx.doi.org/10.1109/MWSCAS.2017.8052917"
+  },
+  {
+    "title": "Live demonstration: A compact all-CMOS spatiotemporal compressed sensing video camera",
+    "subtitle": "Xiong et al. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050405"
+  },
+  {
+    "title": "Neuromorphic visual saliency implementation using stochastic computation",
+    "subtitle": "Thakur et al. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050868"
+  },
+  {
+    "title": "Low-power, low-mismatch, highly-dense array of VLSI Mihalas-Niebur neurons",
+    "subtitle": "Molin et al. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050933"
+  },
+  {
+    "title": "Live demonstration: Real-time, dynamic visual saliency computation in a VR environment seeing through the eyes of a mobile robot",
+    "subtitle": "Molin et al. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050720"
+  },
+  {
+    "title": "Live demonstration: FPGA neural array emulation for real-time, event-based simultaneous dewarping and filtering for aerial vehicles",
+    "subtitle": "Molin, Rattray, and Etienne-Cummings. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050407"
+  },
+  {
+    "title": "Live demonstration: Event-based image processing on CMOS Mihalas-Niebur neuron array transceiver",
+    "subtitle": "Molin, Eisape, and Etienne-Cummings. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050406"
+  },
+  {
+    "title": "Iontophoresis instrumentation for the enhancement of gene therapy in wound healing",
+    "subtitle": "Leistner et al. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050729"
+  },
+  {
+    "title": "Live demonstration: A wirelessly powered highly miniaturized neural stimulator",
+    "subtitle": "Khalifa et al. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050716"
+  },
+  {
+    "title": "In-vivo tests of an inductively powered miniaturized neural stimulator",
+    "subtitle": "Khalifa et al. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050557"
+  },
+  {
+    "title": "A model based approach for realizing a safe wireless biotelemetry system",
+    "subtitle": "Duncan and Etienne-Cummings. 2017. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2017.8050366"
+  },
+  {
+    "title": "Novel integration and packaging concepts of highly miniaturized inductively powered neural implants",
+    "subtitle": "Khalifa et al. 2017. EMBC.",
+    "doi": "http://dx.doi.org/10.1109/EMBC.2017.8036805"
+  },
+  {
+    "title": "Automatic detection of electrocardiographic arrhythmias by parallel continuous neural networks implemented in FPGA",
+    "subtitle": "Alfaro-Ponce, Chairez, and Etienne-Cummings. 2017. Neural Computing and Applications.",
+    "doi": "http://dx.doi.org/10.1007/s00521-017-3051-3"
+  },
+  {
+    "title": "Active phantoms: a paradigm for ultrasound calibration using phantom feedback",
+    "subtitle": "Cheng et al. 2017. Journal of Medical Imaging.",
+    "doi": "http://dx.doi.org/10.1117/1.JMI.4.3.035001"
+  },
+  {
+    "title": "Coil array design for maximizing wireless power transfer to sub-mm sized implantable devices",
+    "subtitle": "Karimi et al. 2017.",
+    "doi": "http://dx.doi.org/10.1109/BIOCAS.2017.8325219"
+  },
+  {
+    "title": "Real-time image segmentation using a spiking neuromorphic processor",
+    "subtitle": "Thakur, Molin, and Etienne-Cummings. 2017. CISS.",
+    "doi": "http://dx.doi.org/10.1109/CISS.2017.7926171"
+  },
+  {
+    "title": "Inference in spiking Bayesian neurons using stochastic computation",
+    "subtitle": "Thakur et al. 2017. CISS.",
+    "doi": "http://dx.doi.org/10.1109/CISS.2017.7926170"
+  },
+  {
+    "title": "A CMOS current steering neurostimulation array with integrated DAC calibration and charge balancing",
+    "subtitle": "Greenwald et al. 2017. TBioCAS.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2016.2609854"
+  },
+  {
+    "title": "A Bidirectional Neural Interface IC With Chopper Stabilized BioADC Array and Charge Balanced Stimulator",
+    "subtitle": "Greenwald et al. 2016. TBioCAS.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2016.2614845"
+  },
+  {
+    "title": "A bidirectional neural interface IC with chopper stabilized BioADC array and charge balanced stimulator",
+    "subtitle": "Greenwald et al. 2016. TBioCAS.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2016.2614845"
+  },
+  {
+    "title": "Intraspinal microstimulation produces over-ground walking in anesthetized cats",
+    "subtitle": "Holinski et al 2016 J. Neural Eng.",
+    "doi": "http://dx.doi.org/10.1088/1741-2560/13/5/056016"
+  },
+  {
+    "title": "Intraspinal microstimulation produces over-ground walking in anesthetized cats",
+    "subtitle": "Holinski et al. 2016. Journal of neural engineering vol. 13, no. 5: 056016.",
+    "doi": "http://dx.doi.org/10.1088/1741-2560/13/5/056016"
+  },
+  {
+    "title": "Stochastic image processing and simultaneous dewarping for aerial vehicles",
+    "subtitle": "Molin, Rattray, and Etienne-Cummings. 2016. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2016.7538990"
+  },
+  {
+    "title": "A compact, low-power, fully analog implantable microstimulator",
+    "subtitle": "Khalifa et al. 2016. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2016.7539084"
+  },
+  {
+    "title": "A fully integrated wireless compressed sensing neural signal acquisition system for chronic recording and brain machine interface",
+    "subtitle": "Liu et al. 2016. IEEE Transactions on Biomedical Circuits and Systems.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2016.2574362"
+  },
+  {
+    "title": "Communication channel analysis and real time compressed sensing for high density neural recording devices",
+    "subtitle": "Zhang et al. 2016. IEEE Transactions on Circuits and Systems I: Regular Papers.",
+    "doi": "http://dx.doi.org/10.1109/TCSI.2016.2556123"
+  },
+  {
+    "title": "Enhanced visual perception through tone mapping",
+    "subtitle": "Harrison et al. 2016. SPIE Defense + Security",
+    "doi": "http://dx.doi.org/10.1117/12.2230873"
+  },
+  {
+    "title": "Compact all-CMOS spatiotemporal compressive sensing video camera with pixel-wise coded exposure",
+    "subtitle": "Zhang et al. 2016. Optics express.",
+    "doi": "http://dx.doi.org/10.1364/OE.24.009013"
+  },
+  {
+    "title": "A mixed-signal VLSI system for producing temporally adapting intraspinal microstimulation patterns for locomotion",
+    "subtitle": "Mazurek et al. 2016. IEEE Transactions on Biomedical Circuits and Systems.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2015.2501419"
+  },
+  {
+    "title": "Bio-inspired system architecture for energy efficient, BIGDATA computing with application to wide area motion imagery",
+    "subtitle": "Andreou et al. 2016. LASCAS.",
+    "doi": "http://dx.doi.org/10.1109/LASCAS.2016.7450995"
+  },
+  {
+    "title": "A 5 μW/channel 9b-ENOB BioADC array for electrocortical recording",
+    "subtitle": "Greenwald et al. 2015.",
+    "doi": ""
+  },
+  {
+    "title": "Live demonstration: Real-time implementation of a proto-object-based dynamic visual saliency model",
+    "subtitle": "Molin and Etienne-Cummings. 2015. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2015.7348321"
+  },
+  {
+    "title": "Giving machines humanlike eyes",
+    "subtitle": "Posch, Benosman, Etienne-Cummings. 2015. IEEE Spectrum.",
+    "doi": "http://dx.doi.org/10.1109/MSPEC.2015.7335800"
+  },
+  {
+    "title": "CMOS implementation of pixel-wise coded exposure imaging for insect-based sensor node",
+    "subtitle": "Zhang et al. 2015. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2015.7348419"
+  },
+  {
+    "title": "Compressed sensing block-wise exposure control algorithm using optical flow estimation",
+    "subtitle": "Xiong et al. 2015. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2015.7348443"
+  },
+  {
+    "title": "FPGA emulation of a spike-based, stochastic system for real-time image dewarping",
+    "subtitle": "Molin et al. 2015. MWSCAS.",
+    "doi": "http://dx.doi.org/10.1109/MWSCAS.2015.7282104"
+  },
+  {
+    "title": "Active point out-of-plane ultrasound calibration",
+    "subtitle": "Cheng et al. 2015. SPIE Medical Imaging.",
+    "doi": "http://dx.doi.org/10.1117/12.2081662"
+  },
+  {
+    "title": "An unsupervised dictionary learning algorithm for neural recordings",
+    "subtitle": "Xiong et al. 2015. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2015.7168807"
+  },
+  {
+    "title": "How is motion integrated into a proto-object based visual saliency model?",
+    "subtitle": "Molin, Etienne-Cummings, and Niebur. 2015. CISS.",
+    "doi": "http://dx.doi.org/10.1109/CISS.2015.7086902"
+  },
+  {
+    "title": "A closed-loop compressive-sensing-based neural recording system.",
+    "subtitle": "Zhang et al. 2015. J. Neural Eng.",
+    "doi": "http://dx.doi.org/10.1088/1741-2560/12/3/036005"
+  },
+  {
+    "title": "HFirst: A Temporal Approach to Object Recognition",
+    "subtitle": "Orchard et al. 2015. IEEE Transactions on Pattern Analysis and Machine Intelligence.",
+    "doi": "http://dx.doi.org/10.1109/TPAMI.2015.2392947"
+  },
+  {
+    "title": "A dictionary learning algorithm for multi-channel neural recordings",
+    "subtitle": "Xiong et al. 2014.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2014.6981632"
+  },
+  {
+    "title": "Active Ultrasound Pattern Injection System (AUSPIS) for Interventional Tool Guidance",
+    "subtitle": "Guo et al. 2014. PLoS ONE.",
+    "doi": "http://dx.doi.org/10.1371/journal.pone.0104262"
+  },
+  {
+    "title": "Live demonstration: A closed loop Compressive Sensing neural recording system",
+    "subtitle": "Zhang et al. 2014. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2014.6981673"
+  },
+  {
+    "title": "Energy-efficient multi-mode compressed sensing system for implantable neural recordings",
+    "subtitle": "Suo et al. 2014. IEEE TBioCAS.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2014.2359180s"
+  },
+  {
+    "title": "Bioinspired imaging: discovery, emulation, and future prospects",
+    "subtitle": "Larkin, Etienne-Cummings, and Van der Spiegel. 2014. Proceedings of the IEEE.",
+    "doi": "http://dx.doi.org/10.1109/JPROC.2014.2351192"
+  },
+  {
+    "title": "Bioinspired Visual Motion Estimation",
+    "subtitle": "Orchard and Etienne-Cummings. 2014. Proceedings of the IEEE.",
+    "doi": "http://dx.doi.org/10.1109/JPROC.2014.2346763"
+  },
+  {
+    "title": "Active echo: a new paradigm for ultrasound calibration",
+    "subtitle": "Guo et al. 2014. MICCAI.",
+    "doi": "http://dx.doi.org/10.1007/978-3-319-10470-6_50"
+  },
+  {
+    "title": "Photoacoustic active ultrasound element for catheter tracking",
+    "subtitle": "Guo et al. 2014. SPIE BiOS.",
+    "doi": "http://dx.doi.org/10.1117/12.2041625"
+  },
+  {
+    "title": "An Efficient and Compact Compressed Sensing Microsystem for Implantable Neural Recordings",
+    "subtitle": "Zhang et al. 2014. IEEE TBioCAS.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2013.2284254"
+  },
+  {
+    "title": "An efficient and compact compressed sensing microsystem for implantable neural recordings",
+    "subtitle": "Zhang et al. 2014. IEEE TBioCAS.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2013.2284254"
+  },
+  {
+    "title": "Energy-efficient two-stage Compressed Sensing method for implantable neural recordings",
+    "subtitle": "Suo et al. IEEE BioCAS. 2013.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2013.6679661"
+  },
+  {
+    "title": "Proto-object based visual saliency model with a motion-sensitive channel",
+    "subtitle": "Molin et al. 2013. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2013.6679631"
+  },
+  {
+    "title": "A model of proto-object based saliency",
+    "subtitle": "Russell et al. 2014. Vision research, vol. 94: 1-15",
+    "doi": "http://dx.doi.org/10.1016/j.visres.2013.10.005"
+  },
+  {
+    "title": "Real-time motion estimation using spatiotemporal filtering in FPGA",
+    "subtitle": "Orchard, Thakor, and Etienne-Cummings. 2013. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2013.6679700"
+  },
+  {
+    "title": "A spiking neural network architecture for visual motion estimation",
+    "subtitle": "Orchard et al. 2013. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2013.6679698"
+  },
+  {
+    "title": "Selecting a safe power level for an indoor implanted UWB wireless biotelemetry link",
+    "subtitle": "Duncan and Etienne-Cummings. 2013. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2013.6679681"
+  },
+  {
+    "title": "Empowering Low-Cost CMOS Cameras by Image Processing to Reach Comparable Results with Costly CCDs",
+    "subtitle": "Köklü et al. 2013. BioNanoScience.",
+    "doi": "http://dx.doi.org/10.1007/s12668-013-0106-5"
+  },
+  {
+    "title": "Reconstruction of neural action potentials using signal dependent sparse representations",
+    "subtitle": "Zhang et al. 2013. ISCAS.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2013.6572147"
+  },
+  {
+    "title": "Fast Neuromimetic Object Recognition Using FPGA Outperforms GPU Implementations",
+    "subtitle": "Orchard et al. 2013. IEEE TNNLS.",
+    "doi": "http://dx.doi.org/10.1109/TNNLS.2013.2253563"
+  },
+  {
+    "title": "Fast neuromimetic object recognition using FPGA outperforms GPU implementations",
+    "subtitle": "Orchard et al. 2013. IEEE TNNLS.",
+    "doi": "http://dx.doi.org/10.1109/TNNLS.2013.2253563"
+  },
+  {
+    "title": "Auditory modulation of visual proto-object formation in a hierarchical auditory-visual saliency map",
+    "subtitle": "Figliolia et al. 2013. CISS.",
+    "doi": "http://dx.doi.org/10.1109/CISS.2013.6616690"
+  },
+  {
+    "title": "Plenoptic cameras in real-time robotics",
+    "subtitle": "Dong et al. 2013. IJRR.",
+    "doi": "http://dx.doi.org/10.1177/0278364912469420"
+  },
+  {
+    "title": "Live demonstration: A tactile perception system for sensing the visual world",
+    "subtitle": "Rhoades et al. 2012. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2012.6418492"
+  },
+  {
+    "title": "Live demo: Spiking ratslam: Rat hippocampus cells in spiking neural hardware",
+    "subtitle": "Galluppi et al. 2012. BioCAS.",
+    "doi": "http://dx.doi.org/10.1109/BioCAS.2012.6418493"
+  },
+  {
+    "title": "A Miniaturized Platform for Laser Speckle Contrast Imaging",
+    "subtitle": "Senarathna et al. 2012. IEEE TBioCAS.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2012.2218106"
+  },
+  {
+    "title": "A miniaturized platform for laser speckle contrast imaging",
+    "subtitle": "Senarathna et al. 2012. TBioCAS.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2012.2218106."
+  },
+  {
+    "title": "Real Time Compressive Sensing Video Reconstruction in Hardware",
+    "subtitle": "Orchard et al. 2012. IEEE JETCAS.",
+    "doi": "http://dx.doi.org/10.1109/JETCAS.2012.2214614"
+  },
+  {
+    "title": "Real time compressive sensing video reconstruction in hardware",
+    "subtitle": "Orchard et al. 2012. IEEE Journal on Emerging and Selected Topics in Circuits and Systems.",
+    "doi": "http://dx.doi.org/10.1109/JETCAS.2012.2214614"
+  },
+  {
+    "title": "Prevention and diagnosis of retained foreign bodies through the years: Past, present, and future technologies",
+    "subtitle": "Asiyanobla et al. 2012. Tech Health Care.",
+    "doi": "http://dx.doi.org/10.3233/THC-2012-0687."
+  },
+  {
+    "title": "Prevention and diagnosis of retained foreign bodies through the years: past, present, and future technologies",
+    "subtitle": "Asiyanbola, Etienne-Cummings, and Lewi. 2012. Technology and Health Care vol. 20, no. 5: 379-386.",
+    "doi": "http://dx.doi.org/10.3233/THC-2012-0687."
+  },
+  {
+    "title": "Neuromorphic approach to a locomotion control algorithm as applied to the cat walking cycle",
+    "subtitle": "Mazurek and Etienne-Cummings. 2012. Conf Proc IFESS.",
+    "doi": ""
+  },
+  {
+    "title": "Intraspinal Microstimulation for Restoring Walking",
+    "subtitle": "Holinski et al. 2012. Conf Proc IFESS.",
+    "doi": ""
+  },
+  {
+    "title": "Modified Map-Seeking Circuit: Use of Computer-Aided Detection in Locating Postoperative Retained Foreign Bodies1",
+    "subtitle": "Asiyanbola et al. 2012. Journal of Surgical Research vol. 175, no. 2: e47-e52.",
+    "doi": "http://dx.doi.org/10.1016/j.jss.2011.11.1018"
+  },
+  {
+    "title": "Perceptual organization, attention and object recognition: Closing the loop",
+    "subtitle": "Russell and Etienne-Cummings. 2012. CISS.",
+    "doi": "http://dx.doi.org/10.1109/CISS.2012.6310919"
+  },
+  {
+    "title": "An entropy based ideal observer model for visual saliency",
+    "subtitle": "Harrison and Etienne-Cummings. 2012. CISS.",
+    "doi": "http://dx.doi.org/10.1109/CISS.2012.6310928"
+  },
+  {
+    "title": "Parameter estimation of a spiking silicon neuron",
+    "subtitle": "Russell et al. 2012. TBioCAS.",
+    "doi": "http://dx.doi.org/10.1109/TBCAS.2011.2182650"
+  },
+  {
+    "title": "Feed forward and feedback control for over-ground locomotion in anaesthetized cats",
+    "subtitle": "Mazurek et al. 2012. J. Neural Engineering.",
+    "doi": "http://dx.doi.org/10.1088/1741-2560/9/2/026003"
+  },
+  {
+    "title": "Towards a Cortical Prosthesis: Implementing A Spike-Based HMAX Model of Visual Object Recognition in Silico",
+    "subtitle": "Folowosele et al. 2011. IEEE JETCAS.",
+    "doi": "http://dx.doi.org/10.1109/JETCAS.2012.2183409"
+  },
+  {
+    "title": "Neuromorphic Electronic Design",
+    "subtitle": "Tenore and Etienne‐Cummings. 2011. Biohybrid Systems: Nerves, Interfaces, and Machines.",
+    "doi": "http://dx.doi.org/10.1002/9783527639366.ch3"
+  },
+  {
+    "title": "Design of a novel head-mountable microscope system for laser speckle imaging",
+    "subtitle": "Senarathna et al. 2011.",
+    "doi": ""
+  },
+  {
+    "title": "Computer Aided Detection Of Retained Foreign Bodies",
+    "subtitle": "Sciotino et al. 2011. Journal of Surgical Research vol. 165, no. 2: 175.",
+    "doi": ""
+  },
+  {
+    "title": "Maximum likelihood parameter estimation of a spiking silicon neuron",
+    "subtitle": "Russell and Etienne-Cummings. 2011.",
+    "doi": ""
+  },
+  {
+    "title": "An area and power efficient I-UWB transmitter for biomedical applications implemented in 65 nm CMOS technology",
+    "subtitle": "Novak, Charles, and Brown. 2011.",
+    "doi": ""
+  },
+  {
+    "title": "A CMOS in-pixel CTIA high-sensitivity fluorescence imager",
+    "subtitle": "Murari et al. 2011. IEEE transactions on biomedical circuits and systems vol. 5, no. 5: 449-458.",
+    "doi": ""
+  },
+  {
+    "title": "Implementation of functional components of the locomotion processing unit",
+    "subtitle": "Mazurek and Etienne-Cummings. 2011.",
+    "doi": ""
+  },
+  {
+    "title": "Neuromorphic silicon neuron circuits",
+    "subtitle": "Indiveri et al. 2011. Frontiers in neuroscience vol. 5.",
+    "doi": "http://dx.doi.org/10.3389/fnins.2011.00073"
+  },
+  {
+    "title": "Sensor and display human factors based design constraints for head mounted and tele-operation systems",
+    "subtitle": "Harrison, Mullins, and Etienne-Cummings. 2011.",
+    "doi": ""
+  },
+  {
+    "title": "Silicon Modeling of the Mihalaş–Niebur Neuron",
+    "subtitle": "Folowosele, Hamilton, and Etienne-Cummings. 2011. IEEE transactions on neural networks vol. 22, no. 12: 1915-1927.",
+    "doi": ""
+  },
+  {
+    "title": "A low-cost COTS UWB transceiver for biological applications achieves 50 Mb/s with",
+    "subtitle": "Duncan and Etienne-Cummings. 2011.",
+    "doi": ""
+  },
+  {
+    "title": "Parameter estimation of history-dependent leaky integrate-and-fire neurons using maximum-likelihood methods",
+    "subtitle": "Dong et al. 2011. Neural computation vol. 23, no. 11: 2833.",
+    "doi": ""
+  },
+  {
+    "title": "Estimating parameters of generalized integrate-and-fire neurons from the maximum likelihood of spike trains",
+    "subtitle": "Dong et al. 2011. Neural computation vol. 23, no. 11: 2833-2867.",
+    "doi": "http://dx.doi.org/10.1162/NECO_a_00196"
+  },
+  {
+    "title": "How do we make future neurally integrated prosthetic devices speak the same language as the nervous system",
+    "subtitle": "Cummings. 2011.",
+    "doi": ""
+  },
+  {
+    "title": "A novel 3D display using multi-hyperstereo image stitching",
+    "subtitle": "Ashby and Etienne-Cummings. 2011.",
+    "doi": ""
+  },
+  {
+    "title": "Confession session: Learning from others mistakes",
+    "subtitle": "Abshire et al. 2011.",
+    "doi": ""
+  },
+  {
+    "title": "Sponges and incorrect sponge count are a minor contribution to the problem of retained foreign bodies",
+    "subtitle": "Asiyanbola et al. 2010. Journal Am Coll Surg.",
+    "doi": ""
+  },
+  {
+    "title": "Optimization methods for spiking neurons and networks",
+    "subtitle": "Russell et al. 2010. IEEE transactions on neural networks vol. 21, no. 12: 1950-1962.",
+    "doi": ""
+  },
+  {
+    "title": "Discriminating multiple nearby targets using single-ping ultrasonic scene mapping",
+    "subtitle": "Orchard and Etienne-Cummings. 2010. IEEE Transactions on Circuits and Systems I: Regular Papers vol. 57, no. 11: 2915-2924.",
+    "doi": ""
+  },
+  {
+    "title": "An integrated imaging microscope for untethered cortical imaging in freely-moving animals",
+    "subtitle": "Murari et al. 2010.",
+    "doi": ""
+  },
+  {
+    "title": "Synthesis of log-domain integrators for silicon synapses with global parametric control",
+    "subtitle": "Mitra, Indiveri, and Etienne-Cummings. 2010.",
+    "doi": ""
+  },
+  {
+    "title": "Locomotion processing unit",
+    "subtitle": "Mazurek et al. 2010.",
+    "doi": ""
+  },
+  {
+    "title": "A spike based 3D imager chip using a mixed mode encoding readout",
+    "subtitle": "Harrison et al. 2010.",
+    "doi": ""
+  },
+  {
+    "title": "Current mode image sensor with two transistors per pixel",
+    "subtitle": "Gruev et al. 2010. IEEE Transactions on Circuits and Systems I: Regular Papers vol. 57, no. 6: 1154-1165.",
+    "doi": ""
+  },
+  {
+    "title": "Sponges and incorrect sponge count are a minor contribution to the problem of retained foreign bodies",
+    "subtitle": "Asiyanbola et al. 2010. Journal of the American College of Surgeons vol. 211, no. 3: S103-S104.",
+    "doi": ""
+  },
+  {
+    "title": "Phase-based control of the central pattern generator for locomotion",
+    "subtitle": "Vogelstein, Etienne-Cummings, and Cohen. 2009.",
+    "doi": ""
+  },
+  {
+    "title": "Decoding of individuated finger movements using surface electromyography",
+    "subtitle": "Tenore et al. 2009. IEEE transactions on biomedical engineering vol. 56, no. 5: 1427-1434.",
+    "doi": "http://dx.doi.org/10/4976166/04648401"
+  },
+  {
+    "title": "A first-order nonhomogeneous Markov model for the response of spiking neurons stimulated by small phase-continuous signals",
+    "subtitle": "Tapson et al. 2009. Neural computation vol. 21, no. 6: 1554-1588.",
+    "doi": "http://dx.doi.org/10.1162/neco.2009.06-07-548"
+  },
+  {
+    "title": "A color detection glove with haptic feedback for the visually disabled",
+    "subtitle": "Schwerdt, Tapson, and Etienne-Cummings. 2009.",
+    "doi": ""
+  },
+  {
+    "title": "Real-time implementation of biofidelic sa1 model for tactile feedback",
+    "subtitle": "Russell et al. 2009.",
+    "doi": ""
+  },
+  {
+    "title": "Simulation of a single ping ultrasonic bearing estimation design using spatiotemporal filtering",
+    "subtitle": "Orchard, Etienne-Cummings, and Molin. 2009.",
+    "doi": ""
+  },
+  {
+    "title": "Contamination of equipment in emergency settings: An exploratory study with a targeted automated intervention",
+    "subtitle": "Obasi et al. 2009. Annals of surgical innovation and research vol. 3, no. 1: 8.",
+    "doi": "http://dx.doi.org/10.1186/1750-1164-3-8"
+  },
+  {
+    "title": "Which photodiode to use: a comparison of CMOS-compatible structures",
+    "subtitle": "Murari et al. 2009. IEEE Sensors Journal vol. 9, no. 7: 752-760.",
+    "doi": ""
+  },
+  {
+    "title": "Design and characterization of a miniaturized epi-illuminated microscope",
+    "subtitle": "Murari et al. 2009.",
+    "doi": ""
+  },
+  {
+    "title": "Low-voltage high CMRR OTA for electrophysiological measurements",
+    "subtitle": "Mitra, Zele, and Etienne-Cummings. 2009.",
+    "doi": ""
+  },
+  {
+    "title": "A switched capacitor implementation of the generalized linear integrate-and-fire neuron",
+    "subtitle": "Folowosele et al. 2009.",
+    "doi": ""
+  },
+  {
+    "title": "A CMOS switched capacitor implementation of the Mihalas-Niebur neuron",
+    "subtitle": "Folowosele, Etienne-Cummings, and Hamilton. 2009.",
+    "doi": ""
+  },
+  {
+    "title": "Focal-plane change triggered video compression for low-power vision sensor systems",
+    "subtitle": "Chi, Etienne-Cummings, and Cauwenberghs. 2009. PloS one vol. 4, no. 7: e6384.",
+    "doi": "http://dx.doi.org/10.1371/journal.pone.0006384"
+  },
+  {
+    "title": "A silicon central pattern generator controls locomotion in vivo",
+    "subtitle": "Vogelstein et al. 2008. IEEE transactions on biomedical circuits and systems vol. 2, no. 3: 212-222.",
+    "doi": ""
+  },
+  {
+    "title": "Biomorphic circuits and systems: Control of robotic and prosthetic limbs",
+    "subtitle": "Tenore and Etienne-Cummings. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "The feeling of color: A haptic feedback device for the visually disabled",
+    "subtitle": "Tapson et al. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "A two-neuron cross-correlation circuit with a wide and continuous range of time delay",
+    "subtitle": "Tapson et al. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "A First-Order Non-Homogeneous Markov Model for the Response of Spiking Neurons Stimulated by Small Phase-Continuous Signals",
+    "subtitle": "Tapson et al. 2008. arXiv preprint arXiv:0807.1513.",
+    "doi": ""
+  },
+  {
+    "title": "Continuous decoding of finger position from surface EMG signals for the control of powered prostheses",
+    "subtitle": "Smith et al. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "Towards control of dexterous hand manipulations using a silicon Pattern Generator",
+    "subtitle": "Russell et al. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "Practical considerations for the use of a Howland current source for neuro-stimulation",
+    "subtitle": "Pouliquen, Vogelstein, and Etienne-Cummings. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "Configuring silicon neural networks using genetic algorithms",
+    "subtitle": "Orchard et al. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "Real-time silicon implementation of V1 in hierarchical visual information processing",
+    "subtitle": "Folowosele, Vogelstein, and Etienne-Cummings. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "Implementing a neuromorphic cross-correlation engine with silicon neurons",
+    "subtitle": "Folowosele et al. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "Adaptive hysteretic comparator with opamp threshold level setting",
+    "subtitle": "Ekekwe and Etienne-Cummings. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "A wide speed range and high precision position and velocity measurements chip with serial peripheral interface",
+    "subtitle": "Ekekwe, Etienne-Cummings, and Kazanzides. 2008. INTEGRATION, the VLSI journal vol. 41, no. 2: 297-305.",
+    "doi": ""
+  },
+  {
+    "title": "A 5-bits precision CMOS bandgap reference with on-chip bi-directional resistance trimming",
+    "subtitle": "Ekekwe and Etienne-Cummings. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "Finite element modeling of tissue for optimal ultrasonic transducer array design",
+    "subtitle": "Clarke, White, and Etienne-Cummings. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "Image sensor with focal plane change event driven video compression",
+    "subtitle": "Chi, Etienne-Cummings, and Cauwenberghs. 2008.",
+    "doi": ""
+  },
+  {
+    "title": "A size and position invariant event-based human posture recognition algorithm",
+    "subtitle": "Chen et al. 2008.",
+    "doi": "http://dx.doi.org/10.1109/BIOCAS.2008.4696930"
+  },
+  {
+    "title": "Correction to\" Asynchronous Decoding of Dexterous Finger Movements Using M1 Neurons\"[Feb 08 3-14]",
+    "subtitle": "Aggarwal et al. 2008. IEEE Transactions on Neural Systems and Rehabilitation Engineering vol. 16, no. 4: 421-421.",
+    "doi": ""
+  },
+  {
+    "title": "Asynchronous decoding of dexterous finger movements using M1 neurons",
+    "subtitle": "Aggarwal et al. 2008. IEEE Transactions on Neural Systems and Rehabilitation Engineering vol. 16, no. 1: 3-14.",
+    "doi": ""
+  },
+  {
+    "title": "Decoding individuated finger movements using volume-constrained neuronal ensembles in the M1 hand area",
+    "subtitle": "Acharya et al. 2008. IEEE Transactions on Neural Systems and Rehabilitation Engineering vol. 16, no. 1: 15-23.",
+    "doi": ""
+  },
+  {
+    "title": "Wireless systems could improve neural prostheses",
+    "subtitle": "Folowosele, Tapson, and Etienne-Cummings. 2007. SPIE Newsroom vol. 10.",
+    "doi": "http://dx.doi.org/10.1117/2.1200709.0854"
+  },
+  {
+    "title": "Two transistor current mode active pixel sensor",
+    "subtitle": "Gruev et al. 2007.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2007.378765"
+  },
+  {
+    "title": "Wireless address event representation system for biological sensor networks (Invited Paper)[6592-04]",
+    "subtitle": "Folowosele, Tapson, and Etienne-Cummings. 1970. PROCEEDINGS-SPIE THE INTERNATIONAL SOCIETY FOR OPTICAL ENGINEERING vol. 6592.",
+    "doi": "http://dx.doi.org/10.1117/12.723960"
+  },
+  {
+    "title": "CMOS imagers: from phototransduction to image processing",
+    "subtitle": "Yadid-Pecht and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "A multichip neuromorphic system for spike-based visual information processing",
+    "subtitle": "Vogelstein et al. 2007. Neural computation vol. 19, no. 9: 2281-2300.",
+    "doi": "http://dx.doi.org/10.1162/neco.2007.19.9.2281"
+  },
+  {
+    "title": "Towards the control of individual fingers of a prosthetic hand using surface EMG signals",
+    "subtitle": "Tenore et al. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Sensor-based dynamic control of the central pattern generator for locomotion",
+    "subtitle": "Tenore, Vogelstein, and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "A simple neural cross-correlation engine",
+    "subtitle": "Tapson and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Configuring of spiking central pattern generator networks for bipedal walking using genetic algorthms",
+    "subtitle": "Russell, Orchard, and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Linear current-mode active pixel sensor",
+    "subtitle": "Philipp et al. 2007. IEEE Journal of Solid-State Circuits vol. 42, no. 11: 2482-2491.",
+    "doi": ""
+  },
+  {
+    "title": "AER auditory filtering and CPG for robot control",
+    "subtitle": "Gomez-Rodriguez et al. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Wireless address event representation system for biological sensor networks",
+    "subtitle": "Folowosele, Tapson, and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Spike-based MAX networks for nonlinear pooling in hierarchical vision processing",
+    "subtitle": "Folowosele, Vogelstein, and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Incremental encoder based position and velocity measurements vlsi chip with serial peripheral interface",
+    "subtitle": "Ekekwe, Etienne-Cummings, and Kazanzides. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "A robust multi-application automatic gain control chip",
+    "subtitle": "Ekekwe and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Design and Optimization of a Capacitive Micromachined Ultrasonic Transducer Micro-Array for Near Field Sensing",
+    "subtitle": "Clarke, White, and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Video sensor node for low-power ad-hoc wireless networks",
+    "subtitle": "Chi et al. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Optical flow approximation of sub-pixel accurate block matching for video coding",
+    "subtitle": "Chi, Tran, and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "ISCAS Special Session Demo: Wireless Video Sensor for Ad-hoc Networks",
+    "subtitle": "Chi et al. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "CMOS camera with in-pixel temporal change detection and ADC",
+    "subtitle": "Chi et al. 2007. IEEE Journal of Solid-State Circuits vol. 42, no. 10: 2187-2196.",
+    "doi": ""
+  },
+  {
+    "title": "Non-Linear Neural Spike Train Decoding via Polynomial Kernel Regression",
+    "subtitle": "Cassidy and Etienne-Cummings. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Towards a brain-computer interface for dexterous control of a multi-fingered prosthetic hand",
+    "subtitle": "Acharya et al. 2007.",
+    "doi": ""
+  },
+  {
+    "title": "Image sensor with general spatial processing in a 3D integrated circuit technology",
+    "subtitle": "Gruev et al. 2006.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2006.1693745"
+  },
+  {
+    "title": "Phase-dependent effects of spinal cord stimulation on locomotor activity",
+    "subtitle": "Vogelstein et al. 2006. IEEE Transactions on Neural Systems and Rehabilitation Engineering vol. 14, no. 3: 257-265.",
+    "doi": ""
+  },
+  {
+    "title": "Dynamic control of spinal locomotion circuits",
+    "subtitle": "Vogelstein et al. 2006.",
+    "doi": ""
+  },
+  {
+    "title": "Control of the spinal cord by an analog VLSI device: on the road to development of a neuroprosthetic device for spinal cord injury patients",
+    "subtitle": "Vogelstein, Etienne-Cummings, and Cohen. 2006. Dynamical principles for neuroscience and intelligent biomimetic devices.",
+    "doi": ""
+  },
+  {
+    "title": "A floating-gate programmable array of silicon neurons for central pattern generating networks",
+    "subtitle": "Tenore et al. 2006.",
+    "doi": ""
+  },
+  {
+    "title": "A second-generation single-chip stereo imager",
+    "subtitle": "Philipp and Etienne-Cummings. 2006.",
+    "doi": ""
+  },
+  {
+    "title": "A 128 x128 33mW 30frames/s single-chip stereo imager",
+    "subtitle": "Philipp and Etienne-Cummings. 2006.",
+    "doi": ""
+  },
+  {
+    "title": "Normal flow measurement visual motion sensor",
+    "subtitle": "Mehta and Etienne-Cummings. 2006.",
+    "doi": ""
+  },
+  {
+    "title": "A simplified normal optical flow measurement CMOS camera",
+    "subtitle": "Mehta and Etienne-Cummings. 2006. IEEE Transactions on Circuits and Systems I: Regular Papers vol. 53, no. 6: 1223-1234.",
+    "doi": ""
+  },
+  {
+    "title": "A constrained optimization technique for the design of a uniformly excited N×N ultrasonic transducer micro‐array",
+    "subtitle": "III and Etienne‐Cummings. 2006. The Journal of the Acoustical Society of America vol. 119, no. 5: 3320-3320.",
+    "doi": "http://dx.doi.org/10.1121/1.4786345"
+  },
+  {
+    "title": "Neuromorphic vision systems for mobile applications",
+    "subtitle": "Etienne-Cummings et al. 2006.",
+    "doi": ""
+  },
+  {
+    "title": "Power dissipation sources and possible control techniques in ultra deep submicron CMOS technologies",
+    "subtitle": "Ekekwe and Etienne-Cummings. 2006. Microelectronics Journal vol. 37, no. 9: 851-860.",
+    "doi": ""
+  },
+  {
+    "title": "Modeling and Simulation of a VLSI Chip for Adaptive Speed Control of Brushed DC Motors",
+    "subtitle": "Ekekwe, Etienne-Cummings, and Kazanzides. 2006. IASTED CAS, Montréal.",
+    "doi": ""
+  },
+  {
+    "title": "A configurable VLSI chip for DC motor control for compact, low-current robotic systems",
+    "subtitle": "Ekekwe, Etienne-Cummings, and Kazanzides. 2006.",
+    "doi": ""
+  },
+  {
+    "title": "Design of an ultrasonic micro-array for near field sensing during retinal microsurgery",
+    "subtitle": "Clarke and Etienne-Cummings. 2006.",
+    "doi": ""
+  },
+  {
+    "title": "Single ping-multiple measurements: Sonar bearing angle estimation using spatiotemporal frequency filters",
+    "subtitle": "Clapp and Etienne-Cummings. 2006. IEEE Transactions on Circuits and Systems I: Regular Papers vol. 53, no. 4: 769-783.",
+    "doi": ""
+  },
+  {
+    "title": "Cmos pixel-level ADC with change detection",
+    "subtitle": "Chi et al. 2006.",
+    "doi": ""
+  },
+  {
+    "title": "Electrical stimulation of a spinal central pattern generator for locomotion",
+    "subtitle": "Vogelstein et al. 2005.",
+    "doi": ""
+  },
+  {
+    "title": "A spiking silicon central pattern generator with floating gate synapses [robot control applications]",
+    "subtitle": "Tenore et al. 2005.",
+    "doi": ""
+  },
+  {
+    "title": "A 1V current-mode CMOS active pixel sensor",
+    "subtitle": "Philipp and Etienne-Cummings. 2005.",
+    "doi": ""
+  },
+  {
+    "title": "Temporal change threshold detection imager",
+    "subtitle": "Mallik et al. 2005.",
+    "doi": ""
+  },
+  {
+    "title": "A real-time spike-domain sensory information processing system [image processing applications]",
+    "subtitle": "Mallik et al. 2005.",
+    "doi": ""
+  },
+  {
+    "title": "CPG design using inhibitory networks",
+    "subtitle": "Lewis, Tenore, and Etienne-Cummings. 2005.",
+    "doi": ""
+  },
+  {
+    "title": "On-chip normal flow computation with aperture problem compensation circuitry",
+    "subtitle": "Gruev and Etienne-Cummings. 2005.",
+    "doi": "http://dx.doi.org/10.1117/12.609531.short"
+  },
+  {
+    "title": "ColorCam: a color-based object recognition camera",
+    "subtitle": "Etienne-Cummings, Pouliquen, and Lewis. 2005.",
+    "doi": "http://dx.doi.org/10.1117/12.609469.short"
+  },
+  {
+    "title": "Sonar echo-location in 2-D using mini-microphone array and spatiotemporal frequency filtering",
+    "subtitle": "Clapp and Etienne-Cummings. 2005.",
+    "doi": ""
+  },
+  {
+    "title": "Guest Editorial",
+    "subtitle": "Yadid-Pecht and Etienne-Cummings. 2004. Analog Integrated Circuits and Signal Processing vol. 39, no. 3: 223-224.",
+    "doi": ""
+  },
+  {
+    "title": "Spatial acuity modulation of an address-event imager",
+    "subtitle": "Vogelstein et al. 2004.",
+    "doi": ""
+  },
+  {
+    "title": "Saliency-driven image acuity modulation on a reconfigurable array of spiking silicon neurons",
+    "subtitle": "Vogelstein et al. 2004. NIPS 17.",
+    "doi": ""
+  },
+  {
+    "title": "A programmable array of silicon neurons for the control of legged locomotion",
+    "subtitle": "Tenore, Etienne-Cummings, and Lewis. 2004.",
+    "doi": ""
+  },
+  {
+    "title": "Single-chip stereo imager",
+    "subtitle": "Philipp and Etienne-Cummings. 2004. Analog Integrated Circuits and Signal Processing vol. 39, no. 3: 237-250.",
+    "doi": "http://dx.doi.org/10.1023/B:ALOG.0000029660.01471.13"
+  },
+  {
+    "title": "Low power current rectifiers for large scale current-mode signal processing",
+    "subtitle": "Philipp and Etienne-Cummings. 2004.",
+    "doi": ""
+  },
+  {
+    "title": "Normal optical flow measurement on a CMOS APS imager",
+    "subtitle": "Mehta and Etienne-Cummings. 2004.",
+    "doi": ""
+  },
+  {
+    "title": "A focal plane normal-flow measurement chip",
+    "subtitle": "Mehta and Etienne-Cummings. 2004.",
+    "doi": "http://dx.doi.org/10.1117/12.544217"
+  },
+  {
+    "title": "A time-series novelty detection chip for sonar",
+    "subtitle": "Horiuchi and Etienne-Cummings. 2004. International Journal of Robotics and Automation vol. 19, no. 4: 171-177.",
+    "doi": ""
+  },
+  {
+    "title": "Linear current mode imager with low fix pattern noise",
+    "subtitle": "Gruev, Etienne-Cummings, and Horiuchi. 2004.",
+    "doi": ""
+  },
+  {
+    "title": "A pipelined temporal difference imager",
+    "subtitle": "Gruev and Etienne-Cummings. 2004. IEEE Journal of Solid-State Circuits vol. 39, no. 3: 538-543.",
+    "doi": ""
+  },
+  {
+    "title": "Active pixel sensor with on-chip normal flow computation on the read out",
+    "subtitle": "Grue and Etienne-Cummings. 2004.",
+    "doi": ""
+  },
+  {
+    "title": "Second generation of high dynamic range, arbitrated digital imager",
+    "subtitle": "Culurciello and Etienne-Cummings. 2004.",
+    "doi": ""
+  },
+  {
+    "title": "Sensing signal input bearing to sensor array using velocity-sensitive spatiotemporal filters",
+    "subtitle": "Clapp and Etienne-Cummings. 2004. Electronics Letters vol. 40, no. 3: 1.",
+    "doi": ""
+  },
+  {
+    "title": "Focal-plane analog image processing",
+    "subtitle": "Clapp, Gruev, and Etienne-Cummings. 2004.",
+    "doi": "http://dx.doi.org/10.1007/1-4020-7962-1_5"
+  },
+  {
+    "title": "Bearing angle estimation for sonar micro-array using analog VLSI spatiotemporal processing",
+    "subtitle": "Clapp and Etienne-Cummings. 2004.",
+    "doi": ""
+  },
+  {
+    "title": "Entrainment of silicon central pattern generators for legged locomotory control",
+    "subtitle": "Tenore, Etienne-Cummings, and Lewis. 2003.",
+    "doi": ""
+  },
+  {
+    "title": "Normal optical flow chip",
+    "subtitle": "Mehta and Etienne-Cummings. 2003.",
+    "doi": ""
+  },
+  {
+    "title": "Vision chip for navigating and controlling micro unmanned aerial vehicles",
+    "subtitle": "Massie et al. 2003.",
+    "doi": ""
+  },
+  {
+    "title": "An in silico central pattern generator: silicon oscillator, coupling, entrainment, and physical computation",
+    "subtitle": "Lewis et al. 2003. Biological cybernetics vol. 88, no. 2: 137-151.",
+    "doi": "http://dx.doi.org/10.1007/s00422-002-0365-7"
+  },
+  {
+    "title": "A time-series processor for sonar mapping and novelty detection",
+    "subtitle": "Horiuchi and Etienne-Cummings. 2003.",
+    "doi": ""
+  },
+  {
+    "title": "A vision chip for color segmentation and pattern matching",
+    "subtitle": "Etienne-Cummings, Pouliquen, and Lewis. 2003. EURASIP Journal on Advances in Signal Processing vol. 2003, no. 7: 407169.",
+    "doi": "http://dx.doi.org/10.1155/S1110865703302021"
+  },
+  {
+    "title": "A biomorphic digital image sensor",
+    "subtitle": "Culurciello, Etienne-Cummings, and Boahen. 2003. IEEE Journal of Solid-State Circuits vol. 38, no. 2: 281-294.",
+    "doi": ""
+  },
+  {
+    "title": "Biologically inspired vision sensors",
+    "subtitle": "Van der Spiegel, Etienne-Cummings, and Nishimura. 2002.",
+    "doi": "http://dx.doi.org/10.1109/MIEL.2002.1003158"
+  },
+  {
+    "title": "Ultrasonic bearing estimation using a MEMS microphone array and spatiotemporal filters",
+    "subtitle": "Clapp and Etienne-Cummings. 2002.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2002.1009927"
+  },
+  {
+    "title": "Architecture for an aVLSI stereo vision system",
+    "subtitle": "Philipp et al. 2002.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2002.1010318"
+  },
+  {
+    "title": "Pipelined temporal difference imager",
+    "subtitle": "Gruev and Etienne-Cummings. 2002. Electronics Letters vol. 38, no. 7: 315-317.",
+    "doi": ""
+  },
+  {
+    "title": "Implementation of steerable spatiotemporal image filters on the focal plane",
+    "subtitle": "Gruev and Etienne-Cummings. 2002. IEEE Transactions on Circuits and Systems II: Analog and Digital Signal Processing vol. 49, no. 4: 233-244.",
+    "doi": ""
+  },
+  {
+    "title": "Single chip for imaging, color segmentation, histogramming and pattern matching",
+    "subtitle": "Etienne-Cummings, Pouliquen, and Lewis. 2002.",
+    "doi": ""
+  },
+  {
+    "title": "A dual pixel-type array for imaging and motion centroid localization",
+    "subtitle": "Clapp and Etienne-Cummings. 2002. IEEE sensors journal vol. 2, no. 6: 529-548.",
+    "doi": ""
+  },
+  {
+    "title": "High dynamic range, arbitrated address event representation digital imager",
+    "subtitle": "Culurciellol, Etienne-Cummings, and Boahen. 2001.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2001.921358"
+  },
+  {
+    "title": "Novel Real-Time Tremor Transduction Technique for Microsurgery",
+    "subtitle": "Tomlin et al. 2001.",
+    "doi": "http://dx.doi.org/10.1007/3-540-45468-3_45"
+  },
+  {
+    "title": "Control of a robot leg with an adaptive aVLSI CPG chip",
+    "subtitle": "Lewis et al. 2001. Neurocomputing vol. 38.",
+    "doi": ""
+  },
+  {
+    "title": "Programmable spatial processing imager chip",
+    "subtitle": "Gruev and Etienne-Cummings. 2001. Electronics Letters vol. 37, no. 11: 688-690.",
+    "doi": ""
+  },
+  {
+    "title": "High-resolution focal plane image processing",
+    "subtitle": "Etienne-Cummings, Gruev, and Clapp. 2001.",
+    "doi": "http://dx.doi.org/10.1117/12.445322"
+  },
+  {
+    "title": "High performance biomorphic image processing under tight space and power constraints",
+    "subtitle": "Etienne-Cummings, Gruev, and Clapp. 2001. Autonomous Robots vol. 11, no. 3: 227-232.",
+    "doi": "http://dx.doi.org/10.1023/A:1013105105678"
+  },
+  {
+    "title": "Biologically inspired visual motion detection in VLSI",
+    "subtitle": "Etienne-Cummings. 2001. International Journal of Computer Vision vol. 44, no. 3: 175-198.",
+    "doi": "http://dx.doi.org/10.1023/A:1012272131141"
+  },
+  {
+    "title": "Architecture for source localization with a linear ultrasonic array",
+    "subtitle": "Etienne-Cummings and Clapp. 2001.",
+    "doi": ""
+  },
+  {
+    "title": "A programmable focal-plane MIMD image processor chip",
+    "subtitle": "Etienne-Cummings, Kalayjian, and Cai. 2001. IEEE Journal of Solid-State Circuits vol. 36, no. 1: 64-73.",
+    "doi": ""
+  },
+  {
+    "title": "A dual pixel-type imager for imaging and motion centroid localization",
+    "subtitle": "Clapp and Etienne-Cummings. 2001.",
+    "doi": ""
+  },
+  {
+    "title": "A programmable spatiotemporal image processor chip",
+    "subtitle": "Gruev and Etienne-Cummings. 2000.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2000.858754"
+  },
+  {
+    "title": "Single-capacitor-single-contact active pixel sensor",
+    "subtitle": "Etienne-Cummings. 2000.",
+    "doi": "http://dx.doi.org/10.1109/ISCAS.2000.857392"
+  },
+  {
+    "title": "Toward biomorphic control using custom aVLSI CPG chips",
+    "subtitle": "Lewis et al. 2000.",
+    "doi": "http://dx.doi.org/10.1109/ROBOT.2000.844103"
+  },
+  {
+    "title": "Precision minimally invasive surgery by adaptive organ motion tracking and compensation",
+    "subtitle": "Tomlin et al. 2000. Annals of Biomedical Engineering vol. 28, SUPPL. 1.",
+    "doi": ""
+  },
+  {
+    "title": "CPU-less robotics: distributed control of biomorphs",
+    "subtitle": "Etienne-Cummings et al. 2000.",
+    "doi": "http://dx.doi.org/10.1117/12.409207"
+  },
+  {
+    "title": "A foveated silicon retina for two-dimensional tracking",
+    "subtitle": "Etienne-Cummings et al. 2000. IEEE Transactions on Circuits and Systems II: Analog and Digital Signal Processing vol. 47, no. 6: 504-517.",
+    "doi": ""
+  },
+  {
+    "title": "Visual Gait Modification 1st Year Technical Report",
+    "subtitle": "Lewis and Etienne-Cummings. 1999.",
+    "doi": ""
+  },
+  {
+    "title": "Intelligent robot vision sensors in VLSI",
+    "subtitle": "Etienne-Cummings. 1999. Autonomous Robots vol. 7, no. 3: 225-237.",
+    "doi": "http://dx.doi.org/10.1023/A:1008968319725"
+  },
+  {
+    "title": "Hardware implementation of a visual-motion pixel using oriented spatiotemporal neural filters",
+    "subtitle": "Etienne-Cummings, Van der Spiegel, and Mueller. 1999. Departmental Papers (ESE).",
+    "doi": ""
+  },
+  {
+    "title": "Architecture for distributed actuation and sensing using smart piezoelectric elements",
+    "subtitle": "Etienne-Cummings et al. 1998.",
+    "doi": "http://dx.doi.org/10.1117/12.316935"
+  },
+  {
+    "title": "Neuromorphic and digital hybrid systems",
+    "subtitle": "Etienne-Cummings, Van der Spiegel, and Mueller. 1997.",
+    "doi": "http://dx.doi.org/10.1142/9789812816535_0013"
+  },
+  {
+    "title": "A general purpose image processing chip: Orientation detection",
+    "subtitle": "Etienne-Cummings and Cai. NIPS 1997.",
+    "doi": ""
+  },
+  {
+    "title": "A focal plane visual motion measurement sensor",
+    "subtitle": "Etienne-Cummings, Van der Spiegel, and Mueller. 1997.",
+    "doi": "http://dx.doi.org/10.1109/81.558442"
+  },
+  {
+    "title": "VLSI model of Primate visual smooth pursuit",
+    "subtitle": "Etienne-Cummings, Van der Spiegel, and Mueller. 1996.",
+    "doi": ""
+  },
+  {
+    "title": "VLSI implementation of cortical visual motion detection using an analog neural computer",
+    "subtitle": "Etienne-Cummings et al. 1996.",
+    "doi": ""
+  },
+  {
+    "title": "Neuromorphic vision sensors",
+    "subtitle": "Etienne-Cummings and Van der Spiegel. 1996. Sensors and Actuators A: Physical vol. 56, no. 1-2: 19-29.",
+    "doi": ""
+  },
+  {
+    "title": "Real-time visual target tracking: two implementations of velocity-based smooth pursuit",
+    "subtitle": "Etienne-Cummings et al. 1995. SPIE.",
+    "doi": "http://dx.doi.org/10.1117/12.211982"
+  },
+  {
+    "title": "Spatiotemporal computation with a general purpose analog neural computer: Real-time visual motion estimation",
+    "subtitle": "Etienne-Cummings et al. 1994.",
+    "doi": "http://dx.doi.org/10.1109/ICNN.1994.374437"
+  },
+  {
+    "title": "Large scale analog neural computer with programmable architecture and programmable time constants for temporal pattern analysis",
+    "subtitle": "Van der Spiegel et al. 1994.",
+    "doi": ""
+  },
+  {
+    "title": "Accurate and simple CMOS'one-over'circuit",
+    "subtitle": "Etienne-Cummings, Hathaway, and Van der Spiegel. 1993. Electronics Letters vol. 29, no. 18: 1618-1620.",
+    "doi": ""
+  },
+  {
+    "title": "A new temporal domain optical flow measurement technique for focal plane VLSI implementation",
+    "subtitle": "Etienne-Cummings et al. 1993.",
+    "doi": ""
+  },
+  {
+    "title": "A general purpose analog neural computer and a silicon retina for real time target acquisition, recognition and tracking",
+    "subtitle": "Etienne-Cummings et al. 1993.",
+    "doi": ""
+  },
+  {
+    "title": "An analog neural computer with modular architecture for real-time dynamic computations",
+    "subtitle": "Van Der Spiegel et al. 1992. IEEE Journal of Solid-State Circuits.",
+    "doi": ""
+  },
+  {
+    "title": "An analog neural computer with modular architecture for real-time dynamic computations",
+    "subtitle": "Van der Spiegel et al. 1992. IEEE Journal of Solid-State Circuits vol. 27, no. 1: 82-92.",
+    "doi": ""
+  },
+  {
+    "title": "Real-time decomposition and recognition of acoustical patterns with an analog neural computer",
+    "subtitle": "Mueller et al. 1992.",
+    "doi": "http://dx.doi.org/10.1117/12.140060"
+  },
+  {
+    "title": "Real-time 2D analog motion detector VLSI circuit",
+    "subtitle": "Etienne-Cummings et al. 1992.",
+    "doi": ""
+  },
+  {
+    "title": "Design and performance of a prototype general purpose analog neural computer",
+    "subtitle": "Mueller et al. 1991. ICJNN 1991.",
+    "doi": "http://dx.doi.org/10.1109/IJCNN.1991.155223"
+  },
+  {
+    "title": "A multichip analog neural network",
+    "subtitle": "Van der Spiegel et al. 1991.",
+    "doi": ""
+  },
+  {
+    "title": "Artificial neural networks: principles and VLSI implementation",
+    "subtitle": "Van der Spiegel et al. 1990.",
+    "doi": "http://dx.doi.org/10.1117/12.26307"
+  }
+]
