@@ -35,9 +35,8 @@ const PostCard: React.FC<Props> = ({ title, date, post, slug }) => {
         </div>
         <div>
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-            <p className="text-tiny uppercase font-bold">The News</p>
-            <small className="text-default-500">{date}</small>
             <h4 className="font-bold text-large">{title}</h4>
+            <small className="text-default-500">{date}</small>
             <hr className="w-[80%] h-[2px] my-2 bg-darkBlue border-0 rounded" />
           </CardHeader>
           <CardBody className="overflow-hidden text-ellipsis py-2" dangerouslySetInnerHTML={{ __html: post }} />
