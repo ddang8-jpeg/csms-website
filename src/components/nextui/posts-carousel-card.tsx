@@ -5,11 +5,11 @@ import { Link } from 'gatsby';
 interface Props {
   title: string;
   date: string;
-  post: string;
+  subtitle: string;
   slug: string;
 }
 
-const PostCarouselCard: React.FC<Props> = ({ title, date, post, slug }) => {
+const PostCarouselCard: React.FC<Props> = ({ title, date, subtitle, slug }) => {
   return (
     <Link to={`/blog/${slug}`}>
       <Card
@@ -22,7 +22,9 @@ const PostCarouselCard: React.FC<Props> = ({ title, date, post, slug }) => {
           <h4 className="font-bold text-large">{title}</h4>
           <hr className="w-[80%] h-[2px] my-2 bg-darkBlue border-0 rounded" />
         </CardHeader>
-        <CardBody className="overflow-visible py-2" dangerouslySetInnerHTML={{ __html: post }} />
+        <CardBody className="py-2">
+          <p>{subtitle}</p>
+        </CardBody>
       </Card>
     </Link>
   );

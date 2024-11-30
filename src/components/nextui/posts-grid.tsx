@@ -7,11 +7,11 @@ interface Frontmatter {
   title: string;
   date: string;
   slug: string;
+  subtitle: string;
 }
 
 interface MarkdownRemarkNode {
   frontmatter: Frontmatter;
-  html: string;
 }
 
 interface GraphQLQueryResult {
@@ -35,8 +35,8 @@ const PostsGrid: React.FC = () => {
               title
               date
               slug
+              subtitle
             }
-            html
           }
         }
       }
@@ -52,8 +52,8 @@ const PostsGrid: React.FC = () => {
     return {
       title: node.frontmatter.title,
       date: node.frontmatter.date,
+      subtitle: node.frontmatter.subtitle,
       year: normalizedYear.getUTCFullYear(), // Use UTC year to avoid time zone issues
-      html: node.html,
       slug: node.frontmatter.slug,
     };
   });
@@ -88,7 +88,7 @@ const PostsGrid: React.FC = () => {
           <div className="relative md:mx-8 mt-4 bottom-8 bg-lightBlue-300 py-10 px-2 lg:px-12 rounded-md shadow-lg shadow-slate-400">
             <div color="primary" className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
               {posts.map((post, index) => (
-                <PostsCard key={index} title={post.title} date={post.date} post={post.html} slug={post.slug} />
+                <PostsCard key={index} title={post.title} date={post.date} post={post.subtitle} slug={post.slug} />
               ))}
             </div>
           </div>

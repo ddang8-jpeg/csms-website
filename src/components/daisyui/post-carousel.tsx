@@ -5,12 +5,12 @@ import { graphql, useStaticQuery } from 'gatsby';
 interface Frontmatter {
   title: string;
   date: string;
+  subtitle: string;
   slug: string;
 }
 
 interface MarkdownRemarkNode {
   frontmatter: Frontmatter;
-  html: string;
 }
 
 interface GraphQLQueryResult {
@@ -35,9 +35,9 @@ const PostsCarousel: React.FC = () => {
             frontmatter {
               title
               date
+              subtitle
               slug
             }
-            html
           }
         }
       }
@@ -47,7 +47,7 @@ const PostsCarousel: React.FC = () => {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
     title: node.frontmatter.title,
     date: node.frontmatter.date,
-    html: node.html,
+    subtitle: node.frontmatter.subtitle,
     slug: node.frontmatter.slug,
   }));
 
@@ -55,7 +55,7 @@ const PostsCarousel: React.FC = () => {
     <div color="primary" className="relative carousel carousel-vertical max-h-[600px] max-w-sm mx-auto items-center">
       {posts.map((post, index) => (
         <div key={index} className="carousel-item">
-          <PostsCard title={post.title} date={post.date} post={post.html} slug={post.slug} />
+          <PostsCard title={post.title} date={post.date} subtitle={post.subtitle} slug={post.slug} />
         </div>
       ))}
     </div>
