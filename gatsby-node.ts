@@ -20,6 +20,11 @@ interface QueryResult {
       node: MarkdownNode;
     }[];
   };
+  researchRemark: {
+    edges: {
+      node: MarkdownNode;
+    }[];
+  };
 }
 
 export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = ({ actions }) => {
@@ -40,6 +45,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions,
   const templates = {
     blog: path.resolve('./src/templates/blog-template.tsx'),
     current: path.resolve('./src/templates/current-member-template.tsx'),
+    research: path.resolve('./src/templates/research-template.tsx'),
   };
 
   // Use GraphQL with the correct type
@@ -62,7 +68,21 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions,
       currentRemark: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/members/current/" } }
         sort: { frontmatter: { id: ASC } }
-        limit: 2000
+        limit: 1000
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+      researchRemark: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/research/" } }
+        sort: { frontmatter: { order: ASC } }
+        limit: 1000
       ) {
         edges {
           node {
@@ -81,7 +101,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions,
     return;
   }
 
-  const { postsRemark, currentRemark } = result.data!;
+  const { postsRemark, currentRemark, researchRemark } = result.data!;
 
   // Helper function to create pages
   const createMarkdownPages = (edges: { node: MarkdownNode }[], pathPrefix: string, template: string) => {
@@ -96,5 +116,68 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions,
 
   // Create pages for both blog posts and current members
   createMarkdownPages(postsRemark.edges, 'blog', templates.blog);
-  createMarkdownPages(currentRemark.edges, 'team/current', templates.current);
+  createMarkdownPages(currentRemark.edges, 'team', templates.current);
+  createMarkdownPages(researchRemark.edges, 'research', templates.research);
+};
+
+export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({
+  actions: { createTypes },
+  schema,
+}) => {
+  const typeDefs = [
+    `type MarkdownRemark implements Node { frontmatter: Frontmatter }`,
+    schema.buildObjectType({
+      name: 'BlockText',
+      fields: {
+        template: { type: 'String!' },
+        header: { type: 'String' },
+        content: { type: 'String' },
+      },
+      interfaces: ['Node'],
+    }),
+    schema.buildObjectType({
+      name: 'BlockImage',
+      fields: {
+        template: { type: 'String!' },
+        src: { type: 'String!' }, // intentionally not defining columnField2
+        caption: { type: 'String' }, // intentionally not defining columnField2
+      },
+      interfaces: ['Node'],
+    }),
+    schema.buildObjectType({
+      name: 'BlockGroupImages',
+      fields: {
+        template: { type: 'String!' },
+        srcs: { type: 'String!' }, // intentionally not defining columnField2
+        caption: { type: 'String' }, // intentionally not defining columnField2
+      },
+      interfaces: ['Node'],
+    }),
+    schema.buildUnionType({
+      name: 'ContentUnion',
+      types: ['BlockHero', 'BlockColumns'],
+      resolveType(value: { template: string }) {
+        if (value.template === 'text') {
+          return 'BlockText';
+        }
+        if (value.template === 'image') {
+          return 'BlockImage';
+        }
+        if (value.template === 'groupImage') {
+          return 'BlockGroupImage';
+        }
+
+        throw new Error('No template defined');
+      },
+    }),
+    schema.buildObjectType({
+      name: 'Frontmatter',
+      fields: {
+        blocks: {
+          type: ['ContentUnion'],
+        },
+      },
+    }),
+  ];
+  createTypes(typeDefs);
 };

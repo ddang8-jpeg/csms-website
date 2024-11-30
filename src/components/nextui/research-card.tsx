@@ -5,10 +5,10 @@ import { Link } from 'gatsby';
 interface Props {
   slug: string;
   title: string;
-  description: string;
+  subtitle: string;
 }
 
-const ResearchCard: React.FC<Props> = ({ title, description, slug }) => {
+const ResearchCard: React.FC<Props> = ({ title, subtitle, slug }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const handleImageLoad = () => {
@@ -16,7 +16,7 @@ const ResearchCard: React.FC<Props> = ({ title, description, slug }) => {
   };
 
   return (
-    <Link to={`/blog/${slug}`}>
+    <Link to={`/research/${slug}`}>
       <Card className="flex flex-row border-none group shadow-md hover:shadow-lg h-full hover:bg-slate-50 overflow-hidden">
         <div className="relative flex overflow-hidden max-w-[200px]">
           <img
@@ -37,7 +37,7 @@ const ResearchCard: React.FC<Props> = ({ title, description, slug }) => {
             <h4 className="font-bold text-large">{title}</h4>
             <hr className="relative w-11/12 h-[2px] my-2 bg-darkBlue border-0 rounded" />
           </CardHeader>
-          <CardBody className="overflow-hidden text-ellipsis py-2 h-full">{description} </CardBody>
+          <CardBody className="overflow-hidden text-ellipsis py-2 h-full">{subtitle} </CardBody>
         </div>
       </Card>
     </Link>
