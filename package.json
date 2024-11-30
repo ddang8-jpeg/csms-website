@@ -69,7 +69,6 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-react": "^7.37.2",
-    "fluid-tailwind": "^1.0.4",
     "globals": "^15.11.0",
     "husky": "^9.1.6",
     "prettier": "^3.3.3",

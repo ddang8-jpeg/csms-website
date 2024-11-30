@@ -1,5 +1,4 @@
 const { nextui } = require('@nextui-org/theme');
-import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
 import { nextui } from '@nextui-org/theme';
 import daisyui from 'daisyui';
 
@@ -10,11 +9,8 @@ export const content = [
   './src/content/**/*.{md,json}',
   './node_modules/@nextui-org/theme/dist/components/(button|link|navbar|ripple|spinner).js',
   './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
-  extract,
 ];
 export const theme = {
-  screens,
-  fontSize,
   extend: {
     colors: {
       // Colors set using branding guides from https://brand.jhu.edu/visual-identity/colors/
@@ -40,7 +36,6 @@ export const theme = {
 };
 export const darkMode = 'class';
 export const plugins = [
-  fluid,
   daisyui,
   function ({ addComponents, theme }) {
     addComponents({
