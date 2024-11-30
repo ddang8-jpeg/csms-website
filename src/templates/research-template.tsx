@@ -85,24 +85,30 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
           {/* Map through the blockss safely */}
           {frontmatter.blocks &&
             frontmatter.blocks.map((blocks, index) => (
-              <div key={index} className="mb-8">
+              <div key={index} className="">
                 {/* Render BlockText */}
                 {blocks.template === 'BlockText' && (
                   <div>
                     <SkewedTitleBox text={blocks.header} />
                     <div className="content-borders">
-                      <p className="text-body">{blocks.content}</p>
+                      {blocks.content.split('\n').map((line, index) => (
+                        <p className="text-body" key={index}>
+                          {line}
+                        </p>
+                      ))}
                     </div>
                   </div>
                 )}
 
                 {/* Render BlockImage */}
                 {blocks.template === 'BlockImage' && (
-                  <div className="image-block content-filled-bg">
-                    <GatsbyImage image={getImage(blocks.src)!} alt={blocks.caption} />{' '}
-                    <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">
-                      {blocks.caption}
-                    </figcaption>
+                  <div className="image-block">
+                    <GatsbyImage
+                      className="bg-white rounded-md p-2"
+                      image={getImage(blocks.src)!}
+                      alt={blocks.caption}
+                    />{' '}
+                    <figcaption className="fig-caption">{blocks.caption}</figcaption>
                   </div>
                 )}
 

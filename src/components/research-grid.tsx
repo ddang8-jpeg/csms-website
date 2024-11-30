@@ -66,7 +66,7 @@ const ResearchGrid: React.FC = () => {
         <SkewedTitleBox text="Current" />
 
         {/* items for the Year */}
-        <div className="relative md:mx-8 mt-4 bottom-8 bg-lightBlue-300 py-10 px-2 lg:px-12 rounded-md shadow-lg shadow-slate-400">
+        <div className="content-filled-bg">
           <div color="primary" className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
             {currentResearch.map((item, index) => (
               <ResearchCard key={index} title={item.title} subtitle={item.subtitle} slug={item.slug} />
@@ -79,7 +79,7 @@ const ResearchGrid: React.FC = () => {
         <SkewedTitleBox text="Past" />
 
         {/* items for the Year */}
-        <div className="relative md:mx-8 mt-4 bottom-8 bg-lightBlue-300 py-10 px-2 lg:px-12 rounded-md shadow-lg shadow-slate-400">
+        <div className="content-filled-bg">
           <div color="primary" className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
             {pastResearch.map((item, index) => (
               <ResearchCard key={index} title={item.title} subtitle={item.subtitle} slug={item.slug} />

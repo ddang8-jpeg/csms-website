@@ -3,7 +3,7 @@ import * as React from 'react';
 
 export const Content = () => (
   <div className="justify-center text-justify font-light ">
-    <p className="mb-4 bg-white p-4 rounded-md">
+    <p className="mb-2 p-2 mx-4">
       Over the past 25 years, Ralph Etienne-Cummings’ research has developed through three main phases. In the early
       part of his career, he studied biologically inspired sensors and sensory computation systems, primarily in the
       form of vision sensors. Typically, these systems were implemented with Very Large Scale Integrated (VLSI)
@@ -11,7 +11,7 @@ export const Content = () => (
       computation systems.
     </p>
 
-    <p className="mb-4 bg-white p-4 rounded-md">
+    <p className="mb-2 p-2 mx-4">
       In the middle part of his career, he studied how these systems can be hosted onto robots. At that point he also
       started to model spinal neural circuits in silicon, and develop robots to study legged locomotion. Both VLSI
       circuits and biomorphic robots were developed and used in these studies. More recently, he has evolved this work
@@ -21,15 +21,16 @@ export const Content = () => (
       ferret and monkey preparations).
     </p>
 
-    <div className="my-10">
+    <div className="image-block">
       <StaticImage
         src="../../static/images/MN_circuit.png"
         alt="CMOS Mihalas-Niebur Model using switch capacitors"
         placeholder="blurred"
       />
+      <figcaption className="fig-caption">Fig 1: placeholder</figcaption>
     </div>
 
-    <p className="mb-4 bg-white p-4 rounded-md">
+    <p className="mb-2 bg-white p-2 rounded-md">
       His work has the potential to produce computers that can perform recognition tasks as effortlessly living
       organism, legged robots that are as efficient and elegant as humans and prosthetics than can seamlessly interface
       with the human body to restore functionality after injury or to overcome disease. Lastly, we have also been
@@ -37,7 +38,7 @@ export const Content = () => (
       ablation and monitoring system, and most recently we focused on developing ultrasonically “smart” tools.
     </p>
 
-    <ol className="my-4 list-decimal bg-white p-4 pl-8 rounded-md">
+    <ol className="mb-2 list-decimal p-2 bg-white pl-8 rounded-md">
       <li>VLSI implementation of large scale neural systems for sensory information processing.</li>
       <li>Development of neurally inspired control systems for legged robots.</li>
       <li>Development of neural prosthetic devices for lower and upper limbs.</li>
@@ -45,7 +46,7 @@ export const Content = () => (
       <li>Image and video analysis for activity recognition and control.</li>
     </ol>
 
-    <p className="mb-4 bg-white p-4 rounded-md">
+    <p className="mb-2 bg-white p-2 rounded-md">
       His work has the potential to produce computers that can perform recognition tasks as effortlessly living
       organism, legged robots that are as efficient and elegant as humans and prosthetics than can seamlessly interface
       with the human body to restore functionality after injury or to overcome disease. Lastly, we have also been

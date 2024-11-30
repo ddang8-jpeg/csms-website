@@ -15,26 +15,14 @@ publications:
   - 'Proto-Object Based Visual Saliency Model with a Motion-Sensitive Channel'
   - 'A Model of Proto-Object Based Saliency'
 subtitle: >
-  The nervous system can rapidly select important information from a visual scene and pay attention to it. 
-  Bottom-up saliency models use low-level features such as intensity, color, and orientation to generate 
-  a saliency map that predicts human fixations.
+  The nervous system can rapidly select important information from a visual scene and pay attention to it. Bottom-up saliency models use low-level features such as intensity, color, and orientation to generate a saliency map that predicts human fixations.
 blocks:
   - template: BlockText
     header: 'Project Description & Figures'
-    content: >
-      Aimed at building a biologically plausible system to reproduce the spatial encoding behavior 
-      discovered in the Hippocampus of rodents. This topic helps improve the understanding of neurological 
-      systems as well as the robotic SLAM problem. Specifically, several groups of neurons become active only 
-      when the rodent is at certain spatial locations.
-
-      Neurological models attribute such spatial encoding to neurons that react to the animal’s locomotion. 
-      We believe that navigation and tracking capabilities are achieved through interactions between these 
-      groups of neurons. This project tests and improves models of such interactions to create a navigation 
-      and tracking system inspired by neural activities.
-
-      A mixed-mode ASIC chip is designed to generate the basic neural response to locomotion. An improved model 
-      for generating spatial encoding in silicon circuit environments has been proposed. Currently, the model is 
-      being implemented with the chip and FPGA for an integrated system for path tracking and mapping.
+    content: |
+      Aimed at building a biologically plausible system to reproduce the spatial encoding behavior discovered in the Hippocampus of rodents. This topic helps improve the understanding of neurological systems as well as the robotic SLAM problem. Specifically, several groups of neurons become active only when the rodent is at certain spatial locations.
+      Neurological models attribute such spatial encoding to neurons that react to the animal’s locomotion. We believe that navigation and tracking capabilities are achieved through interactions between these groups of neurons. This project tests and improves models of such interactions to create a navigation and tracking system inspired by neural activities.
+      A mixed-mode ASIC chip is designed to generate the basic neural response to locomotion. An improved model for generating spatial encoding in silicon circuit environments has been proposed. Currently, the model is being implemented with the chip and FPGA for an integrated system for path tracking and mapping.
 
   - template: BlockImage
     caption: >
