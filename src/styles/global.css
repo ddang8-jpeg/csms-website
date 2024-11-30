@@ -4,21 +4,40 @@
 @layer base {
   :root {
     --radius: 0.5rem;
-    --color-dark-blue: #002D72;
-    --color-light-blue: #68ACE5;
+    --color-dark-blue: #002d72;
+    --color-light-blue: #68ace5;
     --color-light-blue-300: #e2f2ff;
-
   }
 }
 
 .carousel {
-  scroll-snap-type: none !important;  /* Disable snapping on the container */
+  scroll-snap-type: none !important; /* Disable snapping on the container */
 }
 
 .carousel-item {
-  scroll-snap-align: none !important;  /* Disable snapping for individual items */
+  scroll-snap-align: none !important; /* Disable snapping for individual items */
+}
+
+.content-borders {
+  @apply relative md:mx-8 bottom-8 bg-white border-lightBlue border-0 md:border-y-2 py-10 px-2 md:px-8 shadow-none md:shadow-none shadow-slate-400;
+}
+
+.content-filled-bg {
+  @apply relative md:mx-8 mx-auto w-full md:w-fit bottom-8 bg-lightBlue-300 py-10 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400;
+}
+
+.image-block {
+  @apply flex flex-col mx-auto justify-center items-center my-4
+}
+
+.button-lightBlue {
+  @apply relative w-full bg-lightBlue-300 py-2 my-2 px-4 md:rounded-md shadow-slate-400;
+}
+
+.text-body {
+  @apply font-light
 }
 
 html {
-  scroll-behavior: smooth;  /* Ensure smooth scrolling when clicking anchor links */
+  scroll-behavior: smooth; /* Ensure smooth scrolling when clicking anchor links */
 }

@@ -32,7 +32,7 @@ const SkewedTitleBox: React.FC<SkewedTitleBoxProps> = ({ text, delay = '0.1s', t
   }, []);
 
   return (
-    <div className="-ml-5 my-2 py-2 px-4 mx-auto relative z-10">
+    <div className="-ml-5 mt-4 py-2 px-4 mx-auto relative z-10">
       <div
         ref={boxRef}
         className={`before:block before:absolute before:-inset-1 before:-skew-x-12 before:bg-darkBlue relative py-2 px-8`}
@@ -48,7 +48,6 @@ const SkewedTitleBox: React.FC<SkewedTitleBoxProps> = ({ text, delay = '0.1s', t
         <span className={`relative text-3xl font-mono ${textColor}`} style={{ whiteSpace: 'nowrap' }}>
           {text}
         </span>
-        <hr className="relative h-[1px] bg-white rounded border-0 mt-2" />
       </div>
     </div>
   );
