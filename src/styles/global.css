@@ -19,7 +19,7 @@
 }
 
 .content-borders {
-  @apply relative md:mx-8 bottom-8 bg-white border-lightBlue border-0 md:border-y-2 pt-10 pb-4 px-2 md:px-8 shadow-none md:shadow-none shadow-slate-400;
+  @apply relative md:mx-8 bottom-8 bg-white border-lightBlue border-b-0 border-t-2 md:border-y-2 pt-10 pb-4 px-2 md:px-8 shadow-none md:shadow-none shadow-slate-400;
 }
 
 .content-filled-bg {

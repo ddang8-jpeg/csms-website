@@ -3,11 +3,14 @@ import { graphql, PageProps } from 'gatsby';
 import { NextUIProvider } from '@nextui-org/system';
 import Header from '@/components/daisyui/header';
 import Nav from '@/components/nextui/nav';
+import Footer from '@/components/daisyui/footer';
+import SkewedTitleBox from '@/components/skewed-title-box';
 
 interface Frontmatter {
   slug: string;
   name: string;
   bio: string;
+  github: string;
 }
 interface MarkdownRemark {
   frontmatter: Frontmatter;
@@ -24,15 +27,39 @@ const CurrentMemberTemplate: React.FC<CurrentMemberTemplateProps> = ({ data }) =
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <div>
-      <NextUIProvider>
-        <Nav activePage="team" />
-        <Header title={frontmatter.name} />
-        <h1>{frontmatter.name}</h1>
-        <h2>{frontmatter.bio}</h2>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </NextUIProvider>
-    </div>
+    <NextUIProvider>
+      <Nav activePage="research" />
+      <Header title={frontmatter.name} />
+      <div className="flex flex-col md:flex-row mt-2 mb-12 mx-auto max-w-6xl">
+        <div>
+          <SkewedTitleBox text={frontmatter.name} />
+          <div className="content-borders flex justify-center">
+            <img
+              src="https://nextui.org/images/hero-card-complete.jpeg"
+              alt="Card background"
+              className={`relative shadow-black/5 object-cover rounded-full aspect-square`}
+              loading="lazy"
+              width={500}
+              height={500}
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+          <SkewedTitleBox text="Contact" />
+          <div className="content-borders ">
+            <a href={frontmatter.github}>
+              <p className="button-lightBlue">github</p>
+            </a>
+          </div>
+        </div>
+        <div className="w-full">
+          <div>
+            <SkewedTitleBox text="Bio" />
+            <div className="content-borders" dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </NextUIProvider>
   );
 };
 
@@ -43,6 +70,7 @@ export const query = graphql`
         slug
         name
         bio
+        github
       }
       html
     }
