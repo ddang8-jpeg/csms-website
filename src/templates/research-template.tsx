@@ -6,6 +6,7 @@ import Nav from '@/components/nextui/nav';
 import SkewedTitleBox from '@/components/skewed-title-box';
 import Footer from '@/components/daisyui/footer';
 import papersJson from '../content/papers.json';
+import { slugify } from '@/lib/utils';
 
 interface BlockText {
   template: 'BlockText';
@@ -45,13 +46,11 @@ interface ResearchTemplateProps extends PageProps {
   };
 }
 
-const slugify = (a: string): string => {
-  return a.toLowerCase().trim().replace(' ', '-');
-};
-
-const papersMap = new Map(papersJson.map((pub) => [pub.title, pub.doi]));
 const findDOI = (title: string): string => {
-  return papersMap.get(title) || ''; // Use `get` for maps
+  const doi = papersJson.find((entry) => entry.title.toLowerCase() === title.toLowerCase())?.doi || '';
+  console.log(title);
+  console.log(doi);
+  return doi;
 };
 
 const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
@@ -72,7 +71,7 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
           <div className="content-borders">
             <ul className="list-none">
               {frontmatter.team.map((item, key) => (
-                <Link key={key} to={`/team/current/` + slugify(item)}>
+                <Link key={key} to={`/team/` + slugify(item)}>
                   <li className="button-lightBlue" key={key}>
                     {item}
                   </li>
@@ -85,9 +84,7 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
             <ol className="list-none">
               {frontmatter.publications.map((item, key) => (
                 <a href={findDOI(item)} key={key}>
-                  <li className="button-lightBlue" key={key}>
-                    {item}
-                  </li>
+                  <li className="button-lightBlue">{item}</li>
                 </a>
               ))}
             </ol>

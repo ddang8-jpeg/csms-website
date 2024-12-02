@@ -17,7 +17,7 @@ const PICard: React.FC<Props> = ({ name, title, slug }) => {
   };
 
   return (
-    <Link to={`/team/current/${slug}`}>
+    <Link to={`/team/${slug}`}>
       <Card className="group py-6 px-6 hover:bg-gray-50 hover:shadow-md" shadow="none">
         <CardHeader className="flex flex-col md:flex-row">
           <div className="relative shadow-black/5 shadow-none rounded-large">
