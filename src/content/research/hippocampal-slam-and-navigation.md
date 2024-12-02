@@ -4,8 +4,8 @@ current: true
 slug: 'hippocampal-slam-and-navigation'
 title: 'Hippocampal SLAM and Navigation'
 team:
-  - 'Uejima Takeshi'
-  - 'Elena Mancinelli'
+  - 'Jane Doe'
+  - 'John Smith'
 publications:
   - 'Proto-Object Based Saliency Model with Second-Order Texture Feature'
   - 'Computational Stereo-Vision Model of Proto-Object Based Saliency in Three-Dimensional Space'
@@ -26,14 +26,22 @@ blocks:
 
   - template: BlockImage
     caption: >
-      Figure 1: A tracking event with the improved model of place cells that compensates for variations 
+      Figure 1: Test figure that displays one image.
       of actual neural activities and silicon circuits.
     src: '/images/research/complex-vco.png'
 
   - template: BlockGroupImage
     caption: >
-      Figure 2: A picture of the chip die under microscope on the left and its application on the right.
+      Figure 2: Test figure that displays two image.
     srcs:
+      - '/images/research/complex-vco.png'
+      - '/images/research/complex-vco.png'
+
+  - template: BlockGroupImage
+    caption: >
+      Figure 2: Test figure that displays three image.
+    srcs:
+      - '/images/research/complex-vco.png'
       - '/images/research/complex-vco.png'
       - '/images/research/complex-vco.png'
 ---

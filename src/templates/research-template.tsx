@@ -6,8 +6,7 @@ import Nav from '@/components/nextui/nav';
 import SkewedTitleBox from '@/components/skewed-title-box';
 import Footer from '@/components/daisyui/footer';
 import papersJson from '../content/papers.json';
-import { slugify } from '@/lib/utils';
-
+import slugify from 'slugify';
 interface BlockText {
   template: 'BlockText';
   header: string;
@@ -71,7 +70,7 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
           <div className="content-borders">
             <ul className="list-none">
               {frontmatter.team.map((item, key) => (
-                <Link key={key} to={`/team/` + slugify(item)}>
+                <Link key={key} to={`/team/` + slugify(item.toLowerCase())}>
                   <li className="button-lightBlue" key={key}>
                     {item}
                   </li>
