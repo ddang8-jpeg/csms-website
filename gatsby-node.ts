@@ -139,31 +139,31 @@ export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] 
       name: 'BlockImage',
       fields: {
         template: { type: 'String!' },
-        src: { type: 'String!' }, // intentionally not defining columnField2
+        src: { type: 'String' },
         caption: { type: 'String' }, // intentionally not defining columnField2
       },
       interfaces: ['Node'],
     }),
     schema.buildObjectType({
-      name: 'BlockGroupImages',
+      name: 'BlockGroupImage',
       fields: {
         template: { type: 'String!' },
-        srcs: { type: 'String!' }, // intentionally not defining columnField2
+        srcs: { type: '[String]!' }, // intentionally not defining columnField2
         caption: { type: 'String' }, // intentionally not defining columnField2
       },
       interfaces: ['Node'],
     }),
     schema.buildUnionType({
       name: 'ContentUnion',
-      types: ['BlockHero', 'BlockColumns'],
+      types: ['BlockText', 'BlockImage', 'BlockGroupImage'],
       resolveType(value: { template: string }) {
-        if (value.template === 'text') {
+        if (value.template === 'BlockText') {
           return 'BlockText';
         }
-        if (value.template === 'image') {
+        if (value.template === 'BlockImage') {
           return 'BlockImage';
         }
-        if (value.template === 'groupImage') {
+        if (value.template === 'BlockGroupImage') {
           return 'BlockGroupImage';
         }
 

@@ -27,19 +27,30 @@
 }
 
 .fig-caption {
-  @apply mt-2 text-sm text-center text-gray-500 dark:text-gray-400  rounded-md p-2
+  @apply mt-2 mx-2 text-sm text-center text-gray-500 dark:text-gray-400 rounded-md;
 }
 
 .image-block {
-  @apply flex flex-col mx-auto justify-center items-center mb-4 w-full md:w-fit bg-lightBlue-300 py-10 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400
+  @apply flex flex-col mx-auto justify-center items-center mb-4 w-full md:w-fit bg-lightBlue-300 py-6 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400;
+}
+
+.image-group-block {
+  display: grid; /* Use grid for flexible layout */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-adjust columns */
+  gap: 10px; /* Space between images */
+}
+
+.image-group {
+  @apply flex h-auto object-cover;
 }
 
 .button-lightBlue {
   @apply relative w-full bg-lightBlue-300 py-2 my-2 px-4 md:rounded-md shadow-slate-400;
+  object-fit: cover;
 }
 
 .text-body {
-  @apply font-light mb-2
+  @apply font-light mb-2;
 }
 
 html {

@@ -5,9 +5,7 @@ import Header from '@/components/daisyui/header';
 import Nav from '@/components/nextui/nav';
 import SkewedTitleBox from '@/components/skewed-title-box';
 import Footer from '@/components/daisyui/footer';
-import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
-// Define interfaces for blockss
 interface BlockText {
   template: 'BlockText';
   header: string;
@@ -17,7 +15,7 @@ interface BlockText {
 interface BlockImage {
   template: 'BlockImage';
   caption: string;
-  src: IGatsbyImageData;
+  src: string;
 }
 
 interface BlockGroupImage {
@@ -103,11 +101,7 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
                 {/* Render BlockImage */}
                 {blocks.template === 'BlockImage' && (
                   <div className="image-block">
-                    <GatsbyImage
-                      className="bg-white rounded-md p-2"
-                      image={getImage(blocks.src)!}
-                      alt={blocks.caption}
-                    />{' '}
+                    <img className="bg-white rounded-md p-2" src={blocks.src} alt={blocks.caption} />{' '}
                     <figcaption className="fig-caption">{blocks.caption}</figcaption>
                   </div>
                 )}
@@ -115,11 +109,13 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
                 {/* Render BlockGroupImage */}
                 {blocks.template === 'BlockGroupImage' && (
                   <div className="my-4">
-                    <div className="image-group">
-                      <p>{blocks.caption}</p>
-                      {blocks.srcs.map((src, idx) => (
-                        <img key={idx} src={src} alt={`Project visual ${idx + 1}`} />
-                      ))}
+                    <div className="image-block">
+                      <div className="image-group-block">
+                        {blocks.srcs.map((src, idx) => (
+                          <img className="image-group" key={idx} src={src} alt={`Project visual ${idx + 1}`} />
+                        ))}
+                      </div>
+                      <figcaption className="fig-caption">{blocks.caption}</figcaption>
                     </div>
                   </div>
                 )}
@@ -142,15 +138,20 @@ export const query = graphql`
         publications
         subtitle
         blocks {
-          template
-          caption
-          header
-          content
-          srcs
-          src {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
-            }
+          ... on BlockText {
+            template
+            header
+            content
+          }
+          ... on BlockImage {
+            template
+            caption
+            src
+          }
+          ... on BlockGroupImage {
+            srcs
+            caption
+            template
           }
         }
       }

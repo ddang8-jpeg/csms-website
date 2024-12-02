@@ -28,12 +28,12 @@ blocks:
     caption: >
       Figure 1: A tracking event with the improved model of place cells that compensates for variations 
       of actual neural activities and silicon circuits.
-    src: '../../content/images/research/Fig1-ProtoObjectSaliency.png'
+    src: '/images/research/complex-vco.png'
 
-  - template: BlockGroupImages
+  - template: BlockGroupImage
     caption: >
       Figure 2: A picture of the chip die under microscope on the left and its application on the right.
     srcs:
-      - '/csms/assets/imgs/team/members/luke-chen/Figure-2.jpg'
-      - '/csms/assets/imgs/team/members/luke-chen/Figure-3.png'
+      - '/images/research/complex-vco.png'
+      - '/images/research/complex-vco.png'
 ---
