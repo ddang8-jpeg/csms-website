@@ -1,10 +1,11 @@
 import React from 'react';
-import { graphql, PageProps } from 'gatsby';
+import { graphql, Link, PageProps } from 'gatsby';
 import { NextUIProvider } from '@nextui-org/system';
 import Header from '@/components/daisyui/header';
 import Nav from '@/components/nextui/nav';
 import SkewedTitleBox from '@/components/skewed-title-box';
 import Footer from '@/components/daisyui/footer';
+import papersJson from '../content/papers.json';
 
 interface BlockText {
   template: 'BlockText';
@@ -44,6 +45,15 @@ interface ResearchTemplateProps extends PageProps {
   };
 }
 
+const slugify = (a: string): string => {
+  return a.toLowerCase().trim().replace(' ', '-');
+};
+
+const papersMap = new Map(papersJson.map((pub) => [pub.title, pub.doi]));
+const findDOI = (title: string): string => {
+  return papersMap.get(title) || ''; // Use `get` for maps
+};
+
 const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter } = markdownRemark;
@@ -62,19 +72,23 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
           <div className="content-borders">
             <ul className="list-none">
               {frontmatter.team.map((item, key) => (
-                <li className="button-lightBlue" key={key}>
-                  {item}
-                </li>
+                <Link key={key} to={`/team/current/` + slugify(item)}>
+                  <li className="button-lightBlue" key={key}>
+                    {item}
+                  </li>
+                </Link>
               ))}
             </ul>
           </div>
           <SkewedTitleBox text="Publications" />
-          <div className="content-borders">
+          <div className="content-borders ">
             <ol className="list-none">
               {frontmatter.publications.map((item, key) => (
-                <li className="button-lightBlue" key={key}>
-                  {item}
-                </li>
+                <a href={findDOI(item)} key={key}>
+                  <li className="button-lightBlue" key={key}>
+                    {item}
+                  </li>
+                </a>
               ))}
             </ol>
           </div>

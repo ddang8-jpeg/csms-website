@@ -45,7 +45,7 @@
 }
 
 .button-lightBlue {
-  @apply relative w-full bg-lightBlue-300 py-2 my-2 px-4 md:rounded-md shadow-slate-400;
+  @apply relative w-full bg-lightBlue-300 py-2 my-2 px-4 md:rounded-md hover:shadow-md shadow-slate-400;
   object-fit: cover;
 }
 
