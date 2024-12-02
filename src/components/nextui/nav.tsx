@@ -13,7 +13,6 @@ const navItems = [
   { name: 'Team', path: 'team' },
   { name: 'Teaching', path: 'teaching' },
   { name: 'News', path: 'news' },
-  { name: 'Test', path: 'test' },
 ];
 
 const Nav: React.FC<Props> = ({ activePage = 'home' }) => {
