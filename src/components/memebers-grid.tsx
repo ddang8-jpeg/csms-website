@@ -1,14 +1,22 @@
 import * as React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import CurrentCard from '@/components/nextui/current-card';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
+
 interface Frontmatter {
   name: string;
   title: string;
   slug: string;
+  image: ImageNode;
 }
 
 interface MarkdownRemarkNode {
   frontmatter: Frontmatter;
+}
+interface ImageNode {
+  childImageSharp: {
+    gatsbyImageData: IGatsbyImageData;
+  };
 }
 
 interface GraphQLQueryResult {
@@ -33,6 +41,11 @@ const MembersGrid: React.FC = () => {
               slug
               name
               title
+              image {
+                childImageSharp {
+                  gatsbyImageData(width: 800)
+                }
+              }
             }
           }
         }
@@ -40,17 +53,23 @@ const MembersGrid: React.FC = () => {
     }
   `);
 
-  const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
+  const members = data.allMarkdownRemark.edges.map(({ node }) => ({
     name: node.frontmatter.name,
     title: node.frontmatter.title,
     slug: node.frontmatter.slug,
+    image: node.frontmatter.image.childImageSharp.gatsbyImageData, // Handle missing image
   }));
 
   return (
     <div color="primary" className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6">
-      {posts.map((post, index) => (
+      {members.map((member, index) => (
         <div key={index}>
-          <CurrentCard title={post.title} name={post.name} slug={post.slug} />
+          <CurrentCard
+            name={member.name}
+            title={member.title}
+            image={member.image} // Ensure image is null if missing
+            slug={member.slug}
+          />
         </div>
       ))}
     </div>

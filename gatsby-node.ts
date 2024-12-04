@@ -25,6 +25,11 @@ interface QueryResult {
       node: MarkdownNode;
     }[];
   };
+  manualRemark: {
+    edges: {
+      node: MarkdownNode;
+    }[];
+  };
 }
 
 export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = ({ actions }) => {
@@ -32,6 +37,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = ({ act
     resolve: {
       alias: {
         '@/components': path.resolve(__dirname, 'src/components'),
+        '@/styles': path.resolve(__dirname, 'src/styles'),
         '@/lib/utils': path.resolve(__dirname, 'src/lib/utils'),
       },
     },
@@ -46,6 +52,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions,
     blog: path.resolve('./src/templates/blog-template.tsx'),
     current: path.resolve('./src/templates/current-member-template.tsx'),
     research: path.resolve('./src/templates/research-template.tsx'),
+    manual: path.resolve('./src/templates/manual-template.tsx'),
   };
 
   // Use GraphQL with the correct type
@@ -93,6 +100,19 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions,
           }
         }
       }
+      manualRemark: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/teaching/manual/" } }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -101,7 +121,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions,
     return;
   }
 
-  const { postsRemark, currentRemark, researchRemark } = result.data!;
+  const { postsRemark, currentRemark, researchRemark, manualRemark } = result.data!;
 
   // Helper function to create pages
   const createMarkdownPages = (edges: { node: MarkdownNode }[], pathPrefix: string, template: string) => {
@@ -114,10 +134,11 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions,
     });
   };
 
-  // Create pages for both blog posts and current members
+  // Create pages
   createMarkdownPages(postsRemark.edges, 'blog', templates.blog);
   createMarkdownPages(currentRemark.edges, 'team', templates.current);
   createMarkdownPages(researchRemark.edges, 'research', templates.research);
+  createMarkdownPages(manualRemark.edges, 'teaching', templates.manual);
 };
 
 export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({

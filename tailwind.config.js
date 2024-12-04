@@ -4,6 +4,7 @@ import daisyui from 'daisyui';
 
 /** @type {import('tailwindcss').Config} */
 export const content = [
+  './src/**/*.{html,js,jsx,ts,tsx,mdx}',
   './src/pages/**/*.{js,jsx,ts,tsx}',
   './src/components/**/*.{js,jsx,ts,tsx}',
   './src/content/**/*.{md,json}',
@@ -16,13 +17,13 @@ export const theme = {
       // Colors set using branding guides from https://brand.jhu.edu/visual-identity/colors/
       darkBlue: 'var(--color-dark-blue, #002D72)',
       lightBlue: 'var(--color-light-blue, #68ACE5)',
-      'lightBlue-300': 'var(--color-light-blue-300, ##e2f2ff)',
+      'lightBlue-300': 'var(--color-light-blue-300, #E2F2FF)',
 
       mediumBlue: '#0077D8',
       harborBlue: '#4E97E0',
 
       primary: ' #002D72',
-      secondary: '#68ACE5',
+      secondary: '#E2F2FF',
     },
     borderRadius: {
       lg: 'var(--radius)',
@@ -116,4 +117,19 @@ export const plugins = [
       },
     },
   }),
+  function ({ addUtilities }) {
+    addUtilities({
+      '.content-filled-bg': {
+        '@apply relative md:mx-8 mx-auto w-full md:w-fit bottom-8 bg-lightBlue-300 py-10 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400':
+          {},
+      },
+      '.image-block': {
+        '@apply flex flex-col max-h-[500px] mx-auto justify-center items-center mb-4 bg-lightBlue-300 py-6 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400':
+          {},
+      },
+      '.fig-caption': {
+        '@apply mt-2 mx-2 text-sm text-center text-gray-500 dark:text-gray-400 rounded-md': {},
+      },
+    });
+  },
 ];

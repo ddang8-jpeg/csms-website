@@ -12,6 +12,7 @@
   },
   "aliases": {
     "components": "@/components",
+    "styles": "@/styles",
     "content": "@/content",
     "utils": "@/lib/utils",
     "ui": "@/components/ui",

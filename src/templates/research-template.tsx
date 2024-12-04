@@ -47,8 +47,6 @@ interface ResearchTemplateProps extends PageProps {
 
 const findDOI = (title: string): string => {
   const doi = papersJson.find((entry) => entry.title.toLowerCase() === title.toLowerCase())?.doi || '';
-  console.log(title);
-  console.log(doi);
   return doi;
 };
 

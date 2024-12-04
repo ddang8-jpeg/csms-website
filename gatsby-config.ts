@@ -6,80 +6,95 @@ const config: GatsbyConfig = {
     title: `CSMS Website`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'CSMS Website',
-        start_url: '/',
-        icon: 'src/content/images/icon.png',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-root-import',
-      options: {
-        src: path.join(__dirname, 'src'),
-        static: path.join(__dirname, 'static'),
-      },
-    },
+    'gatsby-plugin-postcss',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'slider',
-        path: './src/content/images/team/slider',
-      },
-      __key: 'slider',
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         name: 'images',
-        path: './src/content/images',
+        path: `${__dirname}/src/content/images`, // Adjust if your images are elsewhere
       },
-      __key: 'images',
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'content',
-        path: './src/content',
-      },
-      __key: 'content',
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: './src/content/posts',
+        path: path.resolve(__dirname, 'src/content/posts'),
       },
-      __key: 'posts',
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'current',
-        path: './src/content/members/current',
+        path: path.resolve(__dirname, 'src/content/members/current'),
       },
-      __key: 'current',
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'past',
-        path: './src/content/members/past',
+        path: path.resolve(__dirname, 'src/content/members/past'),
       },
-      __key: 'past',
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'research',
+        path: path.resolve(__dirname, 'src/content/research'),
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'manual',
+        path: path.resolve(__dirname, 'src/content/teaching/manual'),
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'teaching-images',
+        path: path.resolve(__dirname, 'src/content/images/teaching'),
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'slider',
+        path: path.resolve(__dirname, 'src/content/images/team/slider'),
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'CSMS Website',
+        start_url: '/',
+        icon: path.resolve(__dirname, 'src/content/images/icon.png'),
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 800,
+              linkImagesToOriginal: false,
+              showCaptions: true,
+              quality: 80,
+              withWebp: true,
+            },
+          },
+          `gatsby-remark-copy-linked-files`,
+        ],
+      },
+    },
   ],
 };
 

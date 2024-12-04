@@ -1,0 +1,63 @@
+@import './global.css';
+
+.manual-content {
+  @apply font-light;
+}
+
+.manual-borders {
+  @apply relative md:mx-8 bg-white border-darkBlue border-y-2 py-4 my-6 px-2 md:px-8 shadow-none md:shadow-none shadow-slate-400;
+}
+
+.manual-content h1 {
+  @apply mb-2 font-normal text-xl;
+}
+.manual-content h2 {
+  @apply mb-2 font-normal text-lg;
+}
+.manual-content p {
+  @apply mb-2;
+}
+.manual-content ul {
+  @apply px-10 list-disc mb-4;
+}
+
+.manual-content figure {
+  @apply image-block;
+}
+
+.manual-content figure span {
+  @apply w-full;
+}
+
+.manual-content figcaption {
+  @apply fig-caption;
+}
+
+.manual-content img {
+  @apply image-block;
+}
+
+.manual-content a {
+  color: #1d70b8;
+  text-decoration: none;
+}
+
+.manual-content a:hover {
+  text-decoration: underline;
+}
+
+.manual-content blockquote {
+  @apply italic border-l-5 border-darkBlue bg-slate-50 px-4 py-2 m-4;
+}
+
+.manual-content hr {
+  @apply mb-2 border-slate-300;
+}
+
+.manual-content .disclaimer {
+  font-size: 0.9em;
+  color: #555;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}

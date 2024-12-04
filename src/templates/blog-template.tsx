@@ -36,7 +36,6 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data }) => {
         <Header title={'News'} />
         <div className="flex flex-col justify-center sm:flex-row mt-2 mb-12">
           <div>
-            {' '}
             <SkewedTitleBox text={frontmatter.title} />
             <div className="content-borders">
               <div className="flex flex-col max-w-2xl">

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --radius: 0.5rem;
@@ -18,41 +19,31 @@
   scroll-snap-align: none !important; /* Disable snapping for individual items */
 }
 
-.content-borders {
-  @apply relative md:mx-8 bottom-8 bg-white border-lightBlue border-b-0 border-t-2 md:border-y-2 pt-10 pb-4 px-2 md:px-8 shadow-none md:shadow-none shadow-slate-400;
-}
+@layer components {
+  .content-borders {
+    @apply relative md:mx-8 bottom-8 bg-white border-lightBlue border-b-0 border-t-2 md:border-y-2 pt-10 pb-4 px-2 md:px-8 shadow-none md:shadow-none shadow-slate-400;
+  }
 
-.content-filled-bg {
-  @apply relative md:mx-8 mx-auto w-full md:w-fit bottom-8 bg-lightBlue-300 py-10 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400;
-}
+  .image-group-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
 
-.fig-caption {
-  @apply mt-2 mx-2 text-sm text-center text-gray-500 dark:text-gray-400 rounded-md;
-}
+  .image-group {
+    @apply flex h-auto object-cover;
+  }
 
-.image-block {
-  @apply flex flex-col mx-auto justify-center items-center mb-4 w-full md:w-fit bg-lightBlue-300 py-6 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400;
-}
+  .button-lightBlue {
+    @apply relative w-full bg-lightBlue-300 py-2 my-2 px-4 md:rounded-md hover:shadow-md shadow-slate-400;
+    object-fit: cover;
+  }
 
-.image-group-block {
-  display: grid; /* Use grid for flexible layout */
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-adjust columns */
-  gap: 10px; /* Space between images */
-}
-
-.image-group {
-  @apply flex h-auto object-cover;
-}
-
-.button-lightBlue {
-  @apply relative w-full bg-lightBlue-300 py-2 my-2 px-4 md:rounded-md hover:shadow-md shadow-slate-400;
-  object-fit: cover;
-}
-
-.text-body {
-  @apply font-light mb-2;
+  .text-body {
+    @apply font-light mb-2;
+  }
 }
 
 html {
-  scroll-behavior: smooth; /* Ensure smooth scrolling when clicking anchor links */
+  scroll-behavior: smooth;
 }

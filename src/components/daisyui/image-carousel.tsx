@@ -24,7 +24,7 @@ const ImageCarousel: React.FC = () => {
         edges {
           node {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, formats: [AUTO, WEBP], placeholder: BLURRED)
+              gatsbyImageData(height: 280, layout: CONSTRAINED, formats: [AUTO, WEBP], placeholder: BLURRED)
             }
             relativePath
           }

@@ -7,6 +7,7 @@
     "resolveJsonModule": true, // Allows .json files to be imported
     "allowJs": true, // Allow JavaScript files to be compiled
     "checkJs": false, // Disable type checking for JavaScript files
+    "allowSyntheticDefaultImports": true, // Enables synthetic default imports
 
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
