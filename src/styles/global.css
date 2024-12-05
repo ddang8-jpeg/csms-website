@@ -20,14 +20,22 @@
 }
 
 @layer components {
-  .content-borders {
+  .content-titled-borders {
     @apply relative md:mx-8 bottom-8 bg-white border-lightBlue border-b-0 border-t-2 md:border-y-2 pt-10 pb-4 px-2 md:px-8 shadow-none md:shadow-none shadow-slate-400;
+  }
+
+  .content-borders {
+    @apply relative md:mx-8 bg-white border-darkBlue border-y-2 py-4 my-6 px-2 md:px-8 shadow-none md:shadow-none shadow-slate-400;
   }
 
   .image-group-block {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
+  }
+
+  .image-block img {
+    @apply max-h-[500px];
   }
 
   .image-group {

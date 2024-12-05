@@ -16,7 +16,7 @@ const TeachingPage: React.FC<PageProps> = () => {
       <div className="flex flex-col justify-center sm:flex-row mt-2 mb-12">
         <div className="w-1/2">
           <SkewedTitleBox text="Courses" />
-          <div className="content-borders">
+          <div className="content-titled-borders">
             <Button size="lg" href="/teaching/manual-1" as={Link}>
               Intro to VLSI (EN.520.216) Cadence Manual
             </Button>

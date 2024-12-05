@@ -16,13 +16,6 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/content/images`, // Adjust if your images are elsewhere
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         name: 'posts',
         path: path.resolve(__dirname, 'src/content/posts'),
       },
@@ -67,6 +60,13 @@ const config: GatsbyConfig = {
       options: {
         name: 'slider',
         path: path.resolve(__dirname, 'src/content/images/team/slider'),
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/content/images`,
       },
     },
     {

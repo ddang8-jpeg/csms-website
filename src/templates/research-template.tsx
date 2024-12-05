@@ -65,7 +65,7 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
       <div className="flex flex-col md:flex-row mt-2 mb-12 mx-auto max-w-6xl">
         <div>
           <SkewedTitleBox text="Team Members(s)" />
-          <div className="content-borders">
+          <div className="content-titled-borders">
             <ul className="list-none">
               {frontmatter.team.map((item, key) => (
                 <Link key={key} to={`/team/` + slugify(item.toLowerCase())}>
@@ -77,7 +77,7 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
             </ul>
           </div>
           <SkewedTitleBox text="Publications" />
-          <div className="content-borders ">
+          <div className="content-titled-borders ">
             <ol className="list-none">
               {frontmatter.publications.map((item, key) => (
                 <a href={findDOI(item)} key={key}>
@@ -96,7 +96,7 @@ const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
                 {blocks.template === 'BlockText' && (
                   <div>
                     <SkewedTitleBox text={blocks.header} />
-                    <div className="content-borders">
+                    <div className="content-titled-borders">
                       {blocks.content.split('\n').map((line, index) => (
                         <p className="text-body" key={index}>
                           {line}

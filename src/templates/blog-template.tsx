@@ -6,6 +6,7 @@ import Header from '@/components/daisyui/header';
 import Footer from '@/components/daisyui/footer';
 import SkewedTitleBox from '@/components/skewed-title-box';
 import PostCarousel from '@/components/daisyui/post-carousel';
+import '@/styles/manual-style.css';
 
 // Define the types for the expected data structure
 interface Frontmatter {
@@ -37,10 +38,12 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data }) => {
         <div className="flex flex-col justify-center sm:flex-row mt-2 mb-12">
           <div>
             <SkewedTitleBox text={frontmatter.title} />
-            <div className="content-borders">
+            <div className="content-titled-borders">
               <div className="flex flex-col max-w-2xl">
                 <div className="w-fit relative overflow-hidden font-semibold text-xl mb-4">{frontmatter.date}</div>
-                <div dangerouslySetInnerHTML={{ __html: html }} />
+                <div className="manual-content">
+                  <div dangerouslySetInnerHTML={{ __html: html }} />
+                </div>
               </div>
             </div>
           </div>

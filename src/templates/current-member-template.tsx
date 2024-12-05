@@ -5,6 +5,7 @@ import Header from '@/components/daisyui/header';
 import Nav from '@/components/nextui/nav';
 import Footer from '@/components/daisyui/footer';
 import SkewedTitleBox from '@/components/skewed-title-box';
+import '@/styles/manual-style.css';
 
 interface Frontmatter {
   slug: string;
@@ -32,29 +33,27 @@ const CurrentMemberTemplate: React.FC<CurrentMemberTemplateProps> = ({ data }) =
       <Header title={frontmatter.name} />
       <div className="flex flex-col md:flex-row mt-2 mb-12 mx-auto max-w-6xl">
         <div>
-          <SkewedTitleBox text={frontmatter.name} />
-          <div className="content-borders flex justify-center">
+          <div className="content-borders border-t-0 flex justify-center">
             <img
               src="https://nextui.org/images/hero-card-complete.jpeg"
               alt="Card background"
-              className={`relative shadow-black/5 object-cover rounded-full aspect-square`}
+              className={`relative shadow-black/5 object-cover rounded-lg aspect-square`}
               loading="lazy"
               width={500}
               height={500}
               style={{ objectFit: 'cover' }}
             />
           </div>
-          <SkewedTitleBox text="Contact" />
-          <div className="content-borders ">
-            <a href={frontmatter.github}>
-              <p className="button-lightBlue">github</p>
-            </a>
-          </div>
+          <a href={frontmatter.github}>
+            <p className="button-lightBlue">github</p>
+          </a>
         </div>
         <div className="w-full">
           <div>
             <SkewedTitleBox text="Bio" />
-            <div className="content-borders" dangerouslySetInnerHTML={{ __html: html }} />
+            <div className="manual-content">
+              <div className="content-titled-borders" dangerouslySetInnerHTML={{ __html: html }} />
+            </div>
           </div>
         </div>
       </div>

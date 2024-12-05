@@ -16,7 +16,7 @@ const HomePage: React.FC<PageProps> = () => {
       <div className="flex flex-col justify-center sm:flex-row mt-2 mb-12">
         <div>
           <SkewedTitleBox text="About" />
-          <div className="content-borders">
+          <div className="content-titled-borders">
             <div className="max-w-2xl">
               <Content />
             </div>

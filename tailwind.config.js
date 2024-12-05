@@ -124,7 +124,7 @@ export const plugins = [
           {},
       },
       '.image-block': {
-        '@apply flex flex-col max-h-[500px] mx-auto justify-center items-center mb-4 bg-lightBlue-300 py-6 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400':
+        '@apply flex flex-col h-fit mx-auto justify-center items-center mb-4 bg-lightBlue-300 py-6 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400':
           {},
       },
       '.fig-caption': {

@@ -18,15 +18,15 @@ const TeamPage: React.FC<PageProps> = () => {
         <div className="flex flex-col mx-auto items-center justify-center">
           <div className="max-w-6xl">
             <SkewedTitleBox text="Gallery" />
-            <div className="content-borders">
+            <div className="content-titled-borders">
               <ImageCarousel />
             </div>
             <SkewedTitleBox text="Principle Investigator" />
-            <div className="content-borders">
+            <div className="content-titled-borders">
               <PICard name="Ralph Etienne-Cummings" title="Julian S. Smith Professor" slug="john-doe" />
             </div>
             <SkewedTitleBox text="Current Members" />
-            <div className="content-borders">
+            <div className="content-titled-borders">
               <MembersGrid />
             </div>
           </div>
