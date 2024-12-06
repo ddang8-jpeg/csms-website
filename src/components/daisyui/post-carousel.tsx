@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PostsCard from '@/components/nextui/posts-carousel-card';
+import PostsCard from '@/components/nextui/posts-card';
 import { graphql, useStaticQuery } from 'gatsby';
 
 interface Frontmatter {

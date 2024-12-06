@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PostsCard from '@/components/nextui/post-card';
+import PostsCard from '@/components/nextui/posts-card';
 import { graphql, useStaticQuery } from 'gatsby';
 import SkewedTitleBox from '@/components/skewed-title-box';
 
@@ -88,7 +88,7 @@ const PostsGrid: React.FC = () => {
           <div className="relative md:mx-8 mt-4 bottom-8 bg-lightBlue-300 py-10 px-2 lg:px-12 rounded-md shadow-lg shadow-slate-400">
             <div color="primary" className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
               {posts.map((post, index) => (
-                <PostsCard key={index} title={post.title} date={post.date} post={post.subtitle} slug={post.slug} />
+                <PostsCard key={index} title={post.title} date={post.date} subtitle={post.subtitle} slug={post.slug} />
               ))}
             </div>
           </div>
