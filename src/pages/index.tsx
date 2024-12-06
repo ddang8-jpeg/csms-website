@@ -7,6 +7,7 @@ import PostCarousel from '@/components/daisyui/post-carousel';
 import Content from '@/components/content';
 import type { HeadFC, PageProps } from 'gatsby';
 import { NextUIProvider } from '@nextui-org/system';
+import PapersCarousel from '@/components/daisyui/papers-carousel';
 
 const HomePage: React.FC<PageProps> = () => {
   return (
@@ -30,7 +31,7 @@ const HomePage: React.FC<PageProps> = () => {
           </div>
           <SkewedTitleBox text="Papers" />
           <div className="content-filled-bg flex">
-            <PostCarousel />
+            <PapersCarousel />
           </div>
         </div>
       </div>

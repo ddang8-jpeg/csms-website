@@ -21,8 +21,6 @@ A cell view is a virtual data file created in association with a cell and a view
 
 ---
 
-## _Note:_
-
-This hierarchical list may seem confusing, but if you go back to the Library Browser, you will notice that each one correlates to a different level in the libraries.
-
-The Cadence software manages these files transparently. However, because of the relationship between cells, you must use the commands copy, move, and delete within the Cadence software in order to manipulate the different cells. **UNIX operating system commands cannot correctly handle these files.**
+> **_Note:_**
+> This hierarchical list may seem confusing, but if you go back to the Library Browser, you will notice that each one correlates to a different level in the libraries.
+> The Cadence software manages these files transparently. However, because of the relationship between cells, you must use the commands copy, move, and delete within the Cadence software in order to manipulate the different cells. **UNIX operating system commands cannot correctly handle these files.**

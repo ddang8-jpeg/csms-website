@@ -36,6 +36,5 @@ Feel free to look at any of the cell views. To do this, double-click on the part
 
 ---
 
-_Note:_
-
-Sometimes, the window you are working in isn’t big enough to display everything inside of it. When this happens, scroll-bars appear at the bottom, or the sides to allow you to see all of it. On the other hand, you may also change the size of the window. There are several ways to do this, depending on which best suits your needs. If you double-click (left) on the title bar, the window will “explode” to fill your screen vertically, but it won't get any wider. Double-click (left) the menu bar (again) will return it to its original size.
+> **_Note:_**
+> Sometimes, the window you are working in isn’t big enough to display everything inside of it. When this happens, scroll-bars appear at the bottom, or the sides to allow you to see all of it. On the other hand, you may also change the size of the window. There are several ways to do this, depending on which best suits your needs. If you double-click (left) on the title bar, the window will “explode” to fill your screen vertically, but it won't get any wider. Double-click (left) the menu bar (again) will return it to its original size.
