@@ -14,7 +14,7 @@ const PapersCarouselCard: React.FC<Props> = ({ title, subtitle, doi }) => {
         <CardHeader className="py-2 px-4">
           <h4 className="font-bold">{title}</h4>
         </CardHeader>
-        <div className="mx-auto border-b-2 border-darkBlue w-[80%]"></div>
+        <div className="mx-2 border-b-2 border-darkBlue w-[80%]"></div>
         <CardBody className="py-2">
           <p>{subtitle}</p>
         </CardBody>

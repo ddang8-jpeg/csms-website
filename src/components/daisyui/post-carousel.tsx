@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 interface Frontmatter {
   title: string;
   date: string;
-  subtitle: string;
+  subtitle?: string;
   slug: string;
 }
 
