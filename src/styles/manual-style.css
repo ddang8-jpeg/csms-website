@@ -33,7 +33,7 @@
   @apply fig-caption;
 }
 
-.manual-content img {
+.manual-content p img {
   @apply image-block;
 }
 

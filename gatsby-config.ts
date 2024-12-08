@@ -87,8 +87,6 @@ const config: GatsbyConfig = {
               maxWidth: 800,
               linkImagesToOriginal: false,
               showCaptions: true,
-              quality: 80,
-              withWebp: true,
             },
           },
           `gatsby-remark-copy-linked-files`,
