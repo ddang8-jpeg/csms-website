@@ -37,10 +37,10 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data }) => {
         <Header title={'News'} />
         <div className="flex flex-col justify-center sm:flex-row mt-2 mb-12">
           <div>
-            <SkewedTitleBox text={frontmatter.title} />
+            <SkewedTitleBox text={frontmatter.date} />
             <div className="content-titled-borders">
               <div className="flex flex-col max-w-2xl">
-                <div className="w-fit relative overflow-hidden font-semibold text-xl mb-4">{frontmatter.date}</div>
+                <div className="w-fit relative overflow-hidden font-semibold text-xl mb-4">{frontmatter.title}</div>
                 <div className="manual-content">
                   <div dangerouslySetInnerHTML={{ __html: html }} />
                 </div>
