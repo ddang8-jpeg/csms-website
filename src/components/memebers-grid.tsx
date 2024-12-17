@@ -57,7 +57,7 @@ const MembersGrid: React.FC = () => {
     name: node.frontmatter.name,
     title: node.frontmatter.title,
     slug: node.frontmatter.slug,
-    image: node.frontmatter.image.childImageSharp.gatsbyImageData, // Handle missing image
+    image: node.frontmatter.image.childImageSharp.gatsbyImageData,
   }));
 
   return (

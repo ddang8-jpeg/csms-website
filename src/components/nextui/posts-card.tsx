@@ -22,7 +22,7 @@ const PapersCarouselCard: React.FC<Props> = ({ title, date, subtitle, slug }) =>
         </CardHeader>
         {subtitle && (
           <div>
-            <div className="mx-2 border-b-2 border-darkBlue w-[80%]"></div>
+            <div className="mx-auto border-b-2 border-darkBlue w-[95%]"></div>
             <CardBody className="py-2">
               <p>{subtitle}</p>
             </CardBody>

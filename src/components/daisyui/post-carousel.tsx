@@ -54,7 +54,7 @@ const PostsCarousel: React.FC = () => {
   return (
     <div color="primary" className="relative carousel carousel-vertical max-h-[600px] max-w-sm mx-auto items-center">
       {posts.map((post, index) => (
-        <div key={index} className="carousel-item">
+        <div key={index} className="carousel-item w-full">
           <PostsCard title={post.title} date={post.date} subtitle={post.subtitle} slug={post.slug} />
         </div>
       ))}

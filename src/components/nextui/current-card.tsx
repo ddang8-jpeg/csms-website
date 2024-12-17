@@ -20,7 +20,10 @@ const CurrentCard: React.FC<Props> = ({ name, title, image, slug }) => {
 
   return (
     <Link to={`/team/${slug}`}>
-      <Card className="flex flex-col group py-4 h-full rounded-sm justify-between hover:shadow-md" shadow="none">
+      <Card
+        className="flex flex-col group py-4 h-full rounded-sm justify-between hover:bg-slate-50 hover:shadow-md"
+        shadow="none"
+      >
         <CardHeader className="justify-evenly mb-auto">
           <div className="relative overflow-hidden rounded-full border-4 border-white group-hover:border-lightBlue group-hover:drop-shadow-lg shadow-black ">
             <GatsbyImage
