@@ -1,5 +1,13 @@
 import * as React from 'react';
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/navbar';
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+} from '@nextui-org/navbar';
 import { Link } from '@nextui-org/link';
 
 interface Props {
@@ -55,6 +63,25 @@ const Nav: React.FC<Props> = ({ activePage = 'home' }) => {
           </NavbarItem>
         ))}
       </NavbarContent>
+
+      <NavbarContent className="sm:hidden" justify="end">
+        <NavbarMenuToggle />
+      </NavbarContent>
+
+      <NavbarMenu>
+        {navItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              className="w-full"
+              color={activePage === item.name.toLowerCase() ? 'primary' : 'foreground'}
+              href={`/${item.path.toLowerCase()}`}
+              size="lg"
+            >
+              {item.name}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   );
 };
