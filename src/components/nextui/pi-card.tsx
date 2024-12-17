@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Card, CardHeader } from '@nextui-org/card';
-import { Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import { useState } from 'react';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 interface Props {
   name: string;
@@ -10,6 +11,17 @@ interface Props {
 }
 
 const PICard: React.FC<Props> = ({ name, title, slug }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "team/ralph-etienne-cummings.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, width: 400, height: 400, placeholder: BLURRED)
+        }
+      }
+    }
+  `);
+  const image = getImage(data.file.childImageSharp.gatsbyImageData);
+
   const [isLoaded, setIsLoaded] = useState(false);
 
   const handleImageLoad = () => {
@@ -22,18 +34,18 @@ const PICard: React.FC<Props> = ({ name, title, slug }) => {
         <CardHeader className="flex flex-col md:flex-row">
           <div className="relative shadow-black/5 shadow-none rounded-large">
             <div className="relative z-10 max-h-[400px] w-auto group">
-              <img
-                src="https://nextui.org/images/hero-card-complete.jpeg"
-                alt="Card background"
-                className={`opacity-0 shadow-black/5 transition-transform-opacity duration-300 object-cover rounded-full aspect-square 
+              {image && (
+                <GatsbyImage
+                  image={image}
+                  alt="Card background"
+                  className={`relative opacity-0 shadow-black/5 transition-transform-opacity duration-300 object-cover rounded-full aspect-square 
           ${isLoaded ? 'opacity-100 shadow-none' : ''} 
           group-hover:scale-110`}
-                loading="lazy"
-                width={400}
-                height={400}
-                style={{ objectFit: 'cover' }}
-                onLoad={handleImageLoad}
-              />
+                  loading="lazy"
+                  style={{ objectFit: 'cover' }}
+                  onLoad={handleImageLoad}
+                />
+              )}
             </div>
           </div>
           <div className="flex flex-col mx-6 px-6 mt-10 md:mt-0 w-full justify-center">
