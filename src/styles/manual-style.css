@@ -20,17 +20,18 @@
 .manual-content ul {
   @apply px-10 list-disc mb-4;
 }
-
 .manual-content figure {
   @apply image-block;
 }
-
-.manual-content figure span {
-  @apply w-full;
-}
-
 .manual-content figcaption {
   @apply fig-caption;
+}
+.manual-content figure span {
+  @apply w-full max-h-[400px] mx-auto relative overflow-hidden;
+}
+
+.manual-content figure span img {
+  @apply h-auto w-auto max-h-full object-contain;
 }
 
 .manual-content p img {

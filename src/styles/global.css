@@ -21,21 +21,20 @@
 .image-container::before {
   content: '';
   position: absolute;
-  top: -8px; /* Offset the border to the top */
-  left: -8px; /* Offset the border to the left */
+  top: -12px; /* Offset the border to the top */
+  left: -12px; /* Offset the border to the left */
   width: 100%;
   height: 100%;
   border: 3px solid var(--color-light-blue); /* Customize border color and size */
-  border-radius: 4px; /* Matches image border-radius */
+  border-radius: 6px; /* Matches image border-radius */
   z-index: 0; /* Behind the image */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for the border */
 }
 
 /* Image itself */
 .image-container img {
-  border-radius: 4px; /* Matches border-radius of pseudo-element */
+  border-radius: 6px; /* Matches border-radius of pseudo-element */
+  border: 3px solid var(--color-dark-blue); /* Customize border color and size */
 }
-
 
 .carousel {
   scroll-snap-type: none !important; /* Disable snapping on the container */
