@@ -7,36 +7,19 @@ import SkewedTitleBox from '@/components/skewed-title-box';
 import Footer from '@/components/daisyui/footer';
 import papersJson from '../content/papers.json';
 import slugify from 'slugify';
-interface BlockText {
-  template: 'BlockText';
-  header: string;
-  content: string;
-}
 
-interface BlockImage {
-  template: 'BlockImage';
-  caption: string;
-  src: string;
-}
-
-interface BlockGroupImage {
-  template: 'BlockGroupImage';
-  caption: string;
-  srcs: string[]; // Pluralized to match query structure
-}
-
-type blocks = BlockText | BlockImage | BlockGroupImage;
-
+// --- Interfaces ---
 interface Frontmatter {
   title: string;
+  header: string;
   team: string[];
   publications: string[];
   subtitle: string;
-  blocks: blocks[]; // Array of blockss
 }
 
 interface MarkdownRemark {
   frontmatter: Frontmatter;
+  html: string;
 }
 
 interface ResearchTemplateProps extends PageProps {
@@ -45,124 +28,92 @@ interface ResearchTemplateProps extends PageProps {
   };
 }
 
+// --- Helper Functions ---
 const findDOI = (title: string): string => {
-  const doi = papersJson.find((entry) => entry.title.toLowerCase() === title.toLowerCase())?.doi || '';
-  return doi;
+  const paper = papersJson.find((entry) => entry.title.toLowerCase() === title.toLowerCase());
+  return paper?.doi || '';
 };
 
+const TeamList: React.FC<{ team: string[] }> = ({ team }) => (
+  <ul className="list-none">
+    {team.map((member) => (
+      <li key={member} className="button-lightBlue">
+        <Link to={`/team/${slugify(member.toLowerCase())}`}>{member}</Link>
+      </li>
+    ))}
+  </ul>
+);
+
+const PublicationList: React.FC<{ publications: string[] }> = ({ publications }) => (
+  <ol className="list-none">
+    {publications.map((title) => (
+      <li key={title} className="button-lightBlue">
+        <a href={findDOI(title)} target="_blank" rel="noopener noreferrer">
+          {title}
+        </a>
+      </li>
+    ))}
+  </ol>
+);
+
+// --- Main Component ---
 const ResearchTemplate: React.FC<ResearchTemplateProps> = ({ data }) => {
   const { markdownRemark } = data;
-  const { frontmatter } = markdownRemark;
+  const { frontmatter, html } = markdownRemark;
 
   if (!frontmatter) {
-    return <div>Loading...</div>; // or any fallback you prefer
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <p>Loading research page...</p>
+      </div>
+    );
   }
 
   return (
     <NextUIProvider>
       <Nav activePage="research" />
       <Header title={frontmatter.title} />
-      <div className="flex flex-col md:flex-row mt-2 mb-12 mx-auto max-w-6xl">
-        <div>
-          <SkewedTitleBox text="Team Members(s)" />
+
+      <main className="flex flex-col justify-center lg:flex-row mt-2 mb-12 px-4">
+        {/* Left Section: Team and Publications */}
+        <section className="lg:max-w-[400px]">
+          <SkewedTitleBox text="Team Member(s)" />
           <div className="content-titled-borders">
-            <ul className="list-none">
-              {frontmatter.team.map((item, key) => (
-                <Link key={key} to={`/team/` + slugify(item.toLowerCase())}>
-                  <li className="button-lightBlue" key={key}>
-                    {item}
-                  </li>
-                </Link>
-              ))}
-            </ul>
+            <TeamList team={frontmatter.team} />
           </div>
+
           <SkewedTitleBox text="Publications" />
-          <div className="content-titled-borders ">
-            <ol className="list-none">
-              {frontmatter.publications.map((item, key) => (
-                <a href={findDOI(item)} key={key}>
-                  <li className="button-lightBlue">{item}</li>
-                </a>
-              ))}
-            </ol>
+          <div className="content-titled-borders">
+            <PublicationList publications={frontmatter.publications} />
           </div>
-        </div>
-        <div className="w-full">
-          {/* Map through the blockss safely */}
-          {frontmatter.blocks &&
-            frontmatter.blocks.map((blocks, index) => (
-              <div key={index} className="">
-                {/* Render BlockText */}
-                {blocks.template === 'BlockText' && (
-                  <div>
-                    <SkewedTitleBox text={blocks.header} />
-                    <div className="content-titled-borders">
-                      {blocks.content.split('\n').map((line, index) => (
-                        <p className="text-body" key={index}>
-                          {line}
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                )}
+        </section>
 
-                {/* Render BlockImage */}
-                {blocks.template === 'BlockImage' && (
-                  <div className="image-block">
-                    <img className="bg-white rounded-md p-2" src={blocks.src} alt={blocks.caption} />{' '}
-                    <figcaption className="fig-caption">{blocks.caption}</figcaption>
-                  </div>
-                )}
+        {/* Right Section: Research Content */}
+        <section className="max-w-3xl">
+          <SkewedTitleBox text={frontmatter.header} />
+          <div className="content-titled-borders manual-content">
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
+        </section>
+      </main>
 
-                {/* Render BlockGroupImage */}
-                {blocks.template === 'BlockGroupImage' && (
-                  <div className="my-4">
-                    <div className="image-block">
-                      <div className="image-group-block">
-                        {blocks.srcs.map((src, idx) => (
-                          <img className="image-group" key={idx} src={src} alt={`Project visual ${idx + 1}`} />
-                        ))}
-                      </div>
-                      <figcaption className="fig-caption">{blocks.caption}</figcaption>
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-        </div>
-      </div>
       <Footer />
     </NextUIProvider>
   );
 };
 
-// GraphQL query
+// --- GraphQL Query ---
 export const query = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        header
         team
         publications
         subtitle
-        blocks {
-          ... on BlockText {
-            template
-            header
-            content
-          }
-          ... on BlockImage {
-            template
-            caption
-            src
-          }
-          ... on BlockGroupImage {
-            srcs
-            caption
-            template
-          }
-        }
       }
+      html
     }
   }
 `;

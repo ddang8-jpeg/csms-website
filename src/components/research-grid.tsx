@@ -2,6 +2,7 @@ import * as React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import SkewedTitleBox from '@/components/skewed-title-box';
 import ResearchCard from './nextui/research-card';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 interface Frontmatter {
   order: number;
@@ -9,6 +10,13 @@ interface Frontmatter {
   slug: string;
   title: string;
   subtitle: string;
+  image?: ImageNode;
+}
+
+interface ImageNode {
+  childImageSharp: {
+    gatsbyImageData: IGatsbyImageData;
+  };
 }
 
 interface MarkdownRemarkNode {
@@ -39,6 +47,11 @@ const ResearchGrid: React.FC = () => {
               slug
               title
               subtitle
+              image {
+                childImageSharp {
+                  gatsbyImageData(width: 800)
+                }
+              }
             }
             html
           }
@@ -53,6 +66,7 @@ const ResearchGrid: React.FC = () => {
     title: node.frontmatter.title,
     slug: node.frontmatter.slug,
     subtitle: node.frontmatter.subtitle,
+    image: node.frontmatter.image ? node.frontmatter.image.childImageSharp.gatsbyImageData : null,
     html: node.html,
   }));
 
@@ -68,9 +82,19 @@ const ResearchGrid: React.FC = () => {
         {/* items for the Year */}
         <div className="content-filled-bg">
           <div color="primary" className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
-            {currentResearch.map((item, index) => (
-              <ResearchCard key={index} title={item.title} subtitle={item.subtitle} slug={item.slug} />
-            ))}
+            {currentResearch.map((item, index) =>
+              item.image ? (
+                <ResearchCard
+                  key={index}
+                  title={item.title}
+                  subtitle={item.subtitle}
+                  image={item.image}
+                  slug={item.slug}
+                />
+              ) : (
+                <ResearchCard key={index} title={item.title} subtitle={item.subtitle} slug={item.slug} />
+              ),
+            )}
           </div>
         </div>
       </div>
@@ -81,9 +105,19 @@ const ResearchGrid: React.FC = () => {
         {/* items for the Year */}
         <div className="content-filled-bg">
           <div color="primary" className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
-            {pastResearch.map((item, index) => (
-              <ResearchCard key={index} title={item.title} subtitle={item.subtitle} slug={item.slug} />
-            ))}
+            {pastResearch.map((item, index) =>
+              item.image ? (
+                <ResearchCard
+                  key={index}
+                  title={item.title}
+                  subtitle={item.subtitle}
+                  image={item.image}
+                  slug={item.slug}
+                />
+              ) : (
+                <ResearchCard key={index} title={item.title} subtitle={item.subtitle} slug={item.slug} />
+              ),
+            )}
           </div>
         </div>
       </div>

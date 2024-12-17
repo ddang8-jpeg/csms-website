@@ -11,7 +11,6 @@ const config: GatsbyConfig = {
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-postcss',
-    'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
@@ -75,6 +74,17 @@ const config: GatsbyConfig = {
         name: 'CSMS Website',
         start_url: '/',
         icon: path.resolve(__dirname, 'src/content/images/icon.png'),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `blurred`,
+          quality: 90,
+          backgroundColor: `transparent`,
+        },
       },
     },
     {

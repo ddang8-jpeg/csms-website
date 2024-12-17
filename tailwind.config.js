@@ -124,11 +124,12 @@ export const plugins = [
           {},
       },
       '.image-block': {
-        '@apply flex flex-col h-fit mx-auto justify-center items-center mb-4 bg-lightBlue-300 py-6 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400':
+        '@apply flex flex-col w-full mx-auto justify-center items-center my-4 bg-lightBlue-300 py-6 px-2 md:px-6 md:rounded-md md:shadow-lg shadow-slate-400':
           {},
       },
+
       '.fig-caption': {
-        '@apply mt-2 mx-2 text-sm text-center text-gray-500 dark:text-gray-400 rounded-md': {},
+        '@apply mt-4 mx-2 text-sm text-center text-gray-500 dark:text-gray-400 rounded-md': {},
       },
     });
   },

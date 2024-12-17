@@ -161,7 +161,7 @@ export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] 
       fields: {
         template: { type: 'String!' },
         src: { type: 'String' },
-        caption: { type: 'String' }, // intentionally not defining columnField2
+        caption: { type: 'String' },
       },
       interfaces: ['Node'],
     }),
@@ -169,8 +169,8 @@ export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] 
       name: 'BlockGroupImage',
       fields: {
         template: { type: 'String!' },
-        srcs: { type: '[String]!' }, // intentionally not defining columnField2
-        caption: { type: 'String' }, // intentionally not defining columnField2
+        srcs: { type: '[String]!' },
+        caption: { type: 'String' },
       },
       interfaces: ['Node'],
     }),
