@@ -24,7 +24,13 @@ const ImageCarousel: React.FC = () => {
         edges {
           node {
             childImageSharp {
-              gatsbyImageData(height: 280, layout: CONSTRAINED, formats: [AUTO, WEBP], placeholder: BLURRED)
+              gatsbyImageData(
+                width: 1280
+                height: 720
+                layout: CONSTRAINED
+                formats: [AUTO, WEBP]
+                placeholder: BLURRED
+              )
             }
             relativePath
           }
@@ -85,6 +91,7 @@ const ImageCarousel: React.FC = () => {
         <GatsbyImage
           image={images[currentIndex].image}
           alt={images[currentIndex].alt}
+          style={{ height: '100%', width: '100%' }}
           className={`transition-opacity duration-300 ${fade ? 'opacity-0' : 'opacity-100'} rounded-lg`}
         />
       </div>
