@@ -4,7 +4,7 @@ import Nav from '@/components/nextui/nav';
 import Hero from '@/components/daisyui/hero';
 import Footer from '@/components/daisyui/footer';
 import PostCarousel from '@/components/daisyui/post-carousel';
-import Content from '@/components/content';
+import Content from '@/components/landing-content';
 import type { HeadFC, PageProps } from 'gatsby';
 import { NextUIProvider } from '@nextui-org/system';
 import PapersCarousel from '@/components/daisyui/papers-carousel';
@@ -17,10 +17,8 @@ const HomePage: React.FC<PageProps> = () => {
       <div className="flex flex-col justify-center sm:flex-row mt-2 mb-12">
         <div>
           <SkewedTitleBox text="About" />
-          <div className="content-titled-borders">
-            <div className="max-w-2xl">
-              <Content />
-            </div>
+          <div className="content-titled-borders max-w-2xl">
+            <Content />
           </div>
         </div>
 
