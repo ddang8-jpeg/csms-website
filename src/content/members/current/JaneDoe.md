@@ -4,15 +4,17 @@ slug: 'jane-doe'
 name: 'Jane Doe'
 title: 'Researcher'
 image: ../../images/team/portrait-placeholder.jpg
-github: 'https://github.com/ddang8-jpeg'
-bio: 'Jane is a researcher in computational biology.'
+email: 'janedoe@email.com'
+links:
+  - https://github.com/
+  - https://linkedin.com/
 ---
 
 ![Card background](https://nextui.org/images/hero-card-complete.jpeg)
 
 ![Command Interpreter Window (CIW)](../../images/team/portrait-placeholder.jpg)
 
-![Command Interpreter Window (CIW)](../../images/team/adam-cellon.jpg)
+![](../../images/team/portrait-placeholder.jpg)
 
 ![Command Interpreter Window (CIW)](../../images/teaching/manual/start.gif)
 

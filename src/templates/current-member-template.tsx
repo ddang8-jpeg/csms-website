@@ -8,13 +8,16 @@ import SkewedTitleBox from '@/components/skewed-title-box';
 import '@/styles/manual-style.css';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import Publications from '@/components/publications';
+import EmailButton from '@/components/email-button';
+import LinkButtons from '@/components/link-buttons';
 
 interface Frontmatter {
   slug: string;
   name: string;
   bio: string;
   image: ImageNode;
-  github: string;
+  email?: string;
+  links?: string[];
   publications?: string[];
 }
 interface MarkdownRemark {
@@ -42,7 +45,7 @@ const CurrentMemberTemplate: React.FC<CurrentMemberTemplateProps> = ({ data }) =
   };
   return (
     <NextUIProvider>
-      <Nav activePage="research" />
+      <Nav activePage="team" />
       <Header title={frontmatter.name} />
       <div className="mt-2 mb-12 mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row ">
@@ -52,7 +55,7 @@ const CurrentMemberTemplate: React.FC<CurrentMemberTemplateProps> = ({ data }) =
                 <GatsbyImage
                   image={frontmatter.image.childImageSharp.gatsbyImageData}
                   alt="Card background"
-                  className={`opacity-0 shadow-black/5 transition-transform-opacity duration-300 object-cover rounded-sm aspect-square 
+                  className={`opacity-0 shadow-black/5 transition-transform-opacity duration-300 object-cover aspect-square 
           ${isLoaded ? 'opacity-100 shadow-none' : ''} 
           group-hover:scale-110`}
                   loading="lazy"
@@ -61,9 +64,10 @@ const CurrentMemberTemplate: React.FC<CurrentMemberTemplateProps> = ({ data }) =
                 />
               </div>
             </div>
-            <a href={frontmatter.github}>
-              <p className="button-lightBlue">github</p>
-            </a>
+            <div className="mx-auto w-5/6 font-light">
+              {frontmatter.email && <EmailButton email={frontmatter.email} />}
+              {frontmatter.links && <LinkButtons links={frontmatter.links} />}
+            </div>
           </div>
           <div className="w-full">
             <div>
@@ -95,7 +99,8 @@ export const query = graphql`
         slug
         name
         bio
-        github
+        links
+        email
         publications
         image {
           childImageSharp {

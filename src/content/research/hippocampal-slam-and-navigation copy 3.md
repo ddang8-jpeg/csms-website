@@ -1,6 +1,6 @@
 ---
 order: 1
-current: true
+current: false
 image: ../images/research/complex-vco.png
 slug: 'hippocampal-slam-and-navigation'
 title: 'Hippocampal SLAM and Navigation'
@@ -18,7 +18,7 @@ publications:
   - 'Proto-Object Based Visual Saliency Model with a Motion-Sensitive Channel'
   - 'A Model of Proto-Object Based Saliency'
 subtitle: >
-  The nervous system can rapidly select important information from a visual scene and pay attention to it. Bottom-up saliency models use low-level features such as intensity, color, and orientation to generate a saliency map that predicts human fixations.
+  (Exmaple research card with no picutre)The nervous system can rapidly select important information from a visual scene and pay attention to it. Bottom-up saliency models use low-level features such as intensity, color, and orientation to generate a saliency map that predicts human fixations.
 ---
 
 Aimed at building a biologically plausible system to reproduce the spatial encoding behavior discovered in the Hippocampus of rodents. This topic helps improve the understanding of neurological systems as well as the robotic SLAM problem. Specifically, several groups of neurons become active only when the rodent is at certain spatial locations.
